@@ -1,0 +1,19 @@
+{
+  "name": "progress-indicator",
+  "version": "0.1.0",
+  "description": "A block for adding a progress indicator",
+  "main": "webpack.config.js",
+  "scripts": {
+    "check-licenses": "wp-scripts check-licenses --prod --gpl2",
+    "build": "wp-scripts build --webpack-no-externals",
+    "dev": "wp-scripts start --webpack-no-externals"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Rob Stinson",
+  "license": "GPL-2.0-or-later",
+  "devDependencies": {
+    "@wordpress/scripts": "16.1.4"
+  }
+}
