@@ -32,5 +32,5 @@ function progress_indicator_register_block() {
 				'type' => 'string'
 			],
 		]
-	] )
+	] );
 }
