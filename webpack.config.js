@@ -11,7 +11,7 @@
 module.exports = {
 	...defaultConfig,
 	entry: {
-		block: './js/src/index.js',
+		index: './js/src/index.js',
 	},
 	output: {
 		path: path.resolve( __dirname, 'js/dist' ),

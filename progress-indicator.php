@@ -17,20 +17,11 @@
 add_action( 'init', 'progress_indicator_register_block' );
 
 function progress_indicator_register_block() {
-	register_block_type( 'progress-indicator/progress-indicator', [
-		'attributes' => [
-			'numberOfSteps' => [
-				'default' => 5,
-				'type' => 'number'
-			],
-			'currentStep' => [
-				'default' => 1,
-				'type' => 'number'
-			],
-			'color' => [
-				'default' => '#444',
-				'type' => 'string'
-			],
-		]
-	] );
+	register_block_type_from_metadata( __DIR__ . '/js/src' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'progress_indicator_enqueue_js' );
+
+function progress_indicator_enqueue_js() {
+	wp_enqueue_script( 'progress-indicator-js', plugins_url( 'js/dist/index.js', __FILE__ ), [], '0.1.0', true ); 
 }
