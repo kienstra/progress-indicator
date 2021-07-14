@@ -1,3 +1,4 @@
+<?php
 /**
  * Plugin Name:       Progress Indicator Block
  * Plugin URI:        https://robstinson.co/progress-indicator
@@ -12,3 +13,24 @@
  * Text Domain:       progress-indicator
  * Domain Path:       /languages
  */
+
+add_action( 'init', 'progress_indicator_register_block' );
+
+function progress_indicator_register_block() {
+	register_block_type( 'progress-indicator/progress-indicator', [
+		'attributes' => [
+			'numberOfSteps' => [
+				'default' => 5,
+				'type' => 'number'
+			],
+			'currentStep' => [
+				'default' => 1,
+				'type' => 'number'
+			],
+			'color' => [
+				'default' => '#444',
+				'type' => 'string'
+			],
+		]
+	] )
+}
