@@ -3,7 +3,7 @@
  */
 
 import { registerBlockType } from '@wordpress/blocks';
-import * as block from '../../block.json';
+import * as block from './block.json';
 
 registerBlockType( block.name,
 	{
