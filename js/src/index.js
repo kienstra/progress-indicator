@@ -7,28 +7,23 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
-import { 	
-	apiVersion,
-	name,
-	category,
-	icon,
-	attributes
-} from './block.json';
+import { apiVersion, name, category, icon, attributes } from './block.json';
 import Edit from './edit';
 
-registerBlockType( name,
-	{
-		apiVersion,
-		title: __( 'Progress Indicator', 'progress-indicator' ),
-		description: __( 'A block that lets you easily display a progress indicator on your WordPress posts or pages.', 'progress-indicator' ),
-		keywords: [
-			__( 'progress', 'progress-indicator' ),
-			__( 'steps', 'progress-indicator' ),
-		],
-		category,
-		icon,
-		attributes,
-		edit: Edit,
-		save: () => null,
-	}
-);
+registerBlockType( name, {
+	apiVersion,
+	title: __( 'Progress Indicator', 'progress-indicator' ),
+	description: __(
+		'A block that lets you easily display a progress indicator on your WordPress posts or pages.',
+		'progress-indicator'
+	),
+	keywords: [
+		__( 'progress', 'progress-indicator' ),
+		__( 'steps', 'progress-indicator' ),
+	],
+	category,
+	icon,
+	attributes,
+	edit: Edit,
+	save: () => null,
+} );
