@@ -5,26 +5,15 @@ import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { ColorPalette, TextControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { useSelect } from '@wordpress/data';
-import ServerSideRender from '@wordpress/server-side-render';
-
-/**
- * Internal dependencies
- */
-import { name } from './block.json';
+import ProgressIndicator from './progress-indicator';
 
 const Edit = ( {
 	attributes,
 	setAttributes,
 } ) => {
-	const blockProps = useBlockProps();
 	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
-	return <div { ...blockProps }>
-
-		{ /* For next time, reimplement PHP template here in JS */ }
-		<ServerSideRender
-			attributes={ attributes }
-			block={ name }
-		/>
+	return <div { ...useBlockProps() }>
+		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
 			<TextControl
 				label={ __( 'Number of Steps', 'progress-indicator' ) }
@@ -33,6 +22,7 @@ const Edit = ( {
 				onChange={ ( newValue ) => {
 					setAttributes( { numberOfSteps: Number( newValue ) } );
 				} }
+				max={ 10 }
 			/>
 			<TextControl
 				label={ __( 'Current Step', 'progress-indicator' ) }
@@ -41,6 +31,7 @@ const Edit = ( {
 				onChange={ ( newValue ) => {
 					setAttributes( { currentStep: Number( newValue ) } );
 				} }
+				max={ attributes.numberOfSteps }
 			/>
 			<ColorPalette
 				label={ __( 'Color', 'progress-indicator' ) }

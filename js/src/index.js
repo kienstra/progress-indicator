@@ -9,6 +9,7 @@ import { __ } from '@wordpress/i18n';
  */
 import { apiVersion, name, category, icon, attributes } from './block.json';
 import Edit from './edit';
+import Save from './save';
 
 registerBlockType( name, {
 	apiVersion,
@@ -25,5 +26,5 @@ registerBlockType( name, {
 	icon,
 	attributes,
 	edit: Edit,
-	save: () => null,
+	save: Save,
 } );
