@@ -8,7 +8,8 @@
     "build": "wp-scripts build",
     "dev": "wp-scripts start",
     "lint:js": "wp-scripts lint-js js/src",
-    "lint:js:fix": "npm run lint:js -- --fix"
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "packages-update": "wp-scripts packages-update"
   },
   "keywords": [
     "wordpress"
@@ -22,7 +23,6 @@
     "@wordpress/data": "6.0.0",
     "@wordpress/i18n": "4.2.1",
     "@wordpress/scripts": "16.1.4",
-    "@wordpress/server-side-render": "3.0.0",
     "prettier": "2.3.2"
   }
 }
