@@ -19,7 +19,7 @@ const ProgressIndicator = ( {
 		</div>
 		{ /* Step Circles */ }
 		{ [ ...Array( attributes.numberOfSteps ) ].map( ( value, index ) => {
-		let stepClasses = 'gcb-progress-indicator__step';
+			let stepClasses = 'gcb-progress-indicator__step';
 			const step = index + 1;
 			if ( step === attributes.currentStep ) {
 				stepClasses += ' gcb-progress-indicator__current-step';
