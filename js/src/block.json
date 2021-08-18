@@ -15,9 +15,13 @@
 			"type": "number",
 			"default": 2
 		},
-		"color": {
+		"lightColor": {
 			"type": "string",
-			"default": "#444"
+			"default": "#eee"
+		},
+		"darkColor": {
+			"type": "string",
+			"default": "#333"
 		}
 	},
 	"textdomain": "progress-indicator",

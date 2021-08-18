@@ -29,6 +29,7 @@ const ProgressIndicator = ( {
 			return <div
 				key={ index }
 				className={ stepClasses }
+				style={ { backgroundColor: attributes.color } }
 			>
 				{ step < attributes.currentStep
 					? <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 stroke-current text-green-50" viewBox="0 0 20 20" fill="currentColor">

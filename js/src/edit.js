@@ -36,8 +36,13 @@ const Edit = ( {
 				/>
 				<ColorPalette
 					colors={ colors }
-					value={ attributes.color }
-					onChange={ ( newValue ) => setAttributes( { color: newValue } ) }
+					value={ attributes.lightColor }
+					onChange={ ( newValue ) => setAttributes( { lightColor: newValue } ) }
+				/>
+				<ColorPalette
+					colors={ colors }
+					value={ attributes.darkColor }
+					onChange={ ( newValue ) => setAttributes( { darkColor: newValue } ) }
 				/>
 			</PanelBody>
 		</InspectorControls>
