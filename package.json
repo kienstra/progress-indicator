@@ -18,11 +18,11 @@
   "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@wordpress/block-editor": "7.0.0",
-    "@wordpress/blocks": "9.1.5",
+    "@wordpress/blocks": "11.0.0",
     "@wordpress/components": "15.0.0",
     "@wordpress/data": "6.0.0",
     "@wordpress/i18n": "4.2.1",
-    "@wordpress/scripts": "16.1.4",
+    "@wordpress/scripts": "17.1.0",
     "prettier": "2.3.2"
   }
 }
