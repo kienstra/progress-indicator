@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { ColorPalette, TextControl, PanelBody, ColorIndicator } from '@wordpress/components';
+import { ColorPalette, TextControl, PanelBody } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { useSelect } from '@wordpress/data';
 import ProgressIndicator from './progress-indicator';
