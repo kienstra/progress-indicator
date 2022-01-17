@@ -7,9 +7,11 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
-import { apiVersion, name, category, icon, attributes } from './block.json';
+import block from './block.json';
 import Edit from './edit';
 import Save from './save';
+
+const { apiVersion, name, category, icon, attributes } = block;
 
 registerBlockType( name, {
 	apiVersion,
