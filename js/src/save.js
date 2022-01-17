@@ -8,6 +8,13 @@ import { useBlockProps } from '@wordpress/block-editor';
  */
 import ProgressIndicator from './progress-indicator';
 
+/**
+ * The component to save the markup.
+ *
+ * @param {Object}                       props            The component props.
+ * @param {import('./index').Attributes} props.attributes The block attributes.
+ * @return {Function} The component.
+ */
 export default ( {
 	attributes,
 } ) => {

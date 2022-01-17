@@ -1,3 +1,10 @@
+/**
+ * The progress indicator.
+ *
+ * @param {Object}                       props            The component props.
+ * @param {import('./index').Attributes} props.attributes The block attributes.
+ * @return {Function} The component.
+ */
 export default ( {
 	attributes,
 } ) => {

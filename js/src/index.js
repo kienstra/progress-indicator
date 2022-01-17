@@ -13,6 +13,12 @@ import Save from './save';
 
 const { apiVersion, name, category, icon, attributes } = block;
 
+/**
+ * @typedef {Object} Attributes The block attributes.
+ * @property {number} numberOfSteps The total number of steps in the indicator.
+ * @property {number} currentStep   The step that the indicator is on.
+ */
+
 registerBlockType( name, {
 	apiVersion,
 	title: __( 'Progress Indicator', 'progress-indicator' ),

@@ -10,6 +10,14 @@ import { __ } from '@wordpress/i18n';
  */
 import ProgressIndicator from './progress-indicator';
 
+/**
+ * The component for the editor.
+ *
+ * @param {Object}                       props               The component props.
+ * @param {import('./index').Attributes} props.attributes    The block attributes.
+ * @param {Function}                     props.setAttributes Sets the new attributes.
+ * @return {Function} The component.
+ */
 export default ( {
 	attributes,
 	setAttributes,
