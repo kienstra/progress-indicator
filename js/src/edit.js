@@ -11,8 +11,10 @@ const Edit = ( {
 	attributes,
 	setAttributes,
 } ) => {
+	const blockProps = useBlockProps();
 	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
-	return <div { ...useBlockProps() }>
+
+	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
 			<PanelBody>
