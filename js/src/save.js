@@ -2,6 +2,10 @@
  * WordPress dependencies
  */
 import { useBlockProps } from '@wordpress/block-editor';
+
+/**
+ * Internal dependencies
+ */
 import ProgressIndicator from './progress-indicator';
 
 export default ( {

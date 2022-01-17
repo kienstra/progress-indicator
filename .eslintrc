@@ -1,6 +1,15 @@
 // Enables in-line/in-editor linting
 {
-    "extends": [
-      "plugin:@wordpress/eslint-plugin/recommended-with-formatting" 
+  "extends": [
+    "plugin:@wordpress/eslint-plugin/recommended-with-formatting" 
+  ],
+  "rules": {
+    "@wordpress/dependency-group": "error",
+    "@wordpress/i18n-text-domain": [
+      "error",
+      {
+        "allowedTextDomain": "progress-indicator"
+      }
     ]
+  }
 }
