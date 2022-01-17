@@ -2,20 +2,15 @@
   "name": "progress-indicator",
   "version": "0.1.0",
   "description": "A block for adding a progress indicator",
-  "main": "webpack.config.js",
-  "scripts": {
-    "check-licenses": "wp-scripts check-licenses --prod --gpl2",
-    "build": "wp-scripts build",
-    "dev": "wp-scripts start",
-    "lint:js": "wp-scripts lint-js js/src",
-    "lint:js:fix": "npm run lint:js -- --fix",
-    "packages-update": "wp-scripts packages-update"
-  },
+  "author": "Rob Stinson",
+  "license": "GPL-2.0-or-later",
   "keywords": [
     "wordpress"
   ],
-  "author": "Rob Stinson",
-  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/kienstra/progress-indicator-block",
+  "repository": { "url": "https://github.com/kienstra/progress-indicator-block/issues"},
+  "bugs": "https://github.com/kienstra/progress-indicator-block/issues",
+  "main": "webpack.config.js",
   "devDependencies": {
     "@wordpress/block-editor": "7.0.0",
     "@wordpress/blocks": "11.0.0",
@@ -24,5 +19,14 @@
     "@wordpress/i18n": "4.2.1",
     "@wordpress/scripts": "17.1.0",
     "prettier": "2.3.2"
+  },
+  "scripts": {
+    "check-licenses": "wp-scripts check-licenses --prod --gpl2",
+    "build": "wp-scripts build",
+    "dev": "wp-scripts start",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "lint:js": "wp-scripts lint-js js/src",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "packages-update": "wp-scripts packages-update"
   }
 }
