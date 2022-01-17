@@ -35,6 +35,7 @@ const Edit = ( {
 					max={ attributes.numberOfSteps }
 				/>
 				<ColorPalette
+					label="Here is a label"
 					colors={ colors }
 					value={ attributes.lightColor }
 					onChange={ ( newValue ) => setAttributes( { lightColor: newValue } ) }
