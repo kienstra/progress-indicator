@@ -1,7 +1,6 @@
 version: 2.1
 
 orbs:
-  composer: stockfiller/composer@1.0.0
   node: circleci/node@4.1
 
 jobs:
@@ -11,9 +10,7 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run:
-          working_directory: js
-          command: npm run lint:js
+      - run: npm run lint:js
 workflows:
   js-flow:
     jobs:

@@ -7,8 +7,8 @@
  */
 export default ( {
 	attributes,
-} ) => {
-	return <div className="pi-progress-indicator">
+} ) =>
+	<div className="pi-progress-indicator">
 		{ /* Step Lines  */ }
 		<div className="pi-progress-indicator__lines">
 			{ [ ...Array( attributes.numberOfSteps - 1 ) ].map( ( value, index ) =>
@@ -46,4 +46,3 @@ export default ( {
 			</div>;
 		} ) }
 	</div>;
-};

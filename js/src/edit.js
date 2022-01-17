@@ -2,7 +2,7 @@
  * WordPress dependencies
  */
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { TextControl, PanelBody } from '@wordpress/components';
+import { RangeControl, PanelBody } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -28,22 +28,24 @@ export default ( {
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
 			<PanelBody>
-				<TextControl
+				<RangeControl
 					label={ __( 'Number of Steps', 'progress-indicator' ) }
 					type="number"
 					value={ attributes.numberOfSteps }
 					onChange={ ( newValue ) => {
 						setAttributes( { numberOfSteps: Number( newValue ) } );
 					} }
+					min={ 1 }
 					max={ 10 }
 				/>
-				<TextControl
+				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
 					type="number"
 					value={ attributes.currentStep }
 					onChange={ ( newValue ) => {
 						setAttributes( { currentStep: Number( newValue ) } );
 					} }
+					min={ 1 }
 					max={ attributes.numberOfSteps }
 				/>
 			</PanelBody>
