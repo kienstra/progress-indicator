@@ -1,15 +1,18 @@
 // Enables in-line/in-editor linting
 {
+  "root": true,
   "extends": [
-    "plugin:@wordpress/eslint-plugin/recommended-with-formatting",
-    "plugin:import/errors",
-    "plugin:import/warnings"
+    "plugin:@wordpress/eslint-plugin/recommended-with-formatting"
   ],
   "settings": {
     "jsdoc": {
       "mode": "typescript"
     }
   },
+  "plugins": [
+    "jsx-a11y",
+    "jest-dom"
+  ],
   "rules": {
     "@wordpress/dependency-group": "error",
     "@wordpress/i18n-text-domain": [
@@ -17,7 +20,6 @@
       {
         "allowedTextDomain": "progress-indicator"
       }
-    ],
-    "requireConfigFile": "false"
+    ]
   }
 }
