@@ -7,7 +7,7 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
-import block from './block.json';
+import block from '../../block.json';
 import Edit from './edit';
 import Save from './save';
 

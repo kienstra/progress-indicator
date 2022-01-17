@@ -1,7 +1,3 @@
-/**
- * WordPress dependencies
- */
-
 const ProgressIndicator = ( {
 	attributes,
 } ) => {

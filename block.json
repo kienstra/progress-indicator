@@ -25,7 +25,7 @@
 		}
 	},
 	"textdomain": "progress-indicator",
-	"editorScript": "file:../dist/index.js",
-	"style": "file:../../css/block.css",
-	"editorStyle": "file:../../css/block.css"
+	"editorScript": "file:js/dist/index.js",
+	"style": "file:css/block.css",
+	"editorStyle": "file:css/block.css"
 }
