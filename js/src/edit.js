@@ -2,17 +2,19 @@
  * WordPress dependencies
  */
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { ColorPalette, TextControl, PanelBody } from '@wordpress/components';
+import { TextControl, PanelBody } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+
+/**
+ * Internal dependencies
+ */
 import ProgressIndicator from './progress-indicator';
 
-const Edit = ( {
+export default ( {
 	attributes,
 	setAttributes,
 } ) => {
 	const blockProps = useBlockProps();
-	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
@@ -36,20 +38,7 @@ const Edit = ( {
 					} }
 					max={ attributes.numberOfSteps }
 				/>
-				<ColorPalette
-					label="Here is a label"
-					colors={ colors }
-					value={ attributes.lightColor }
-					onChange={ ( newValue ) => setAttributes( { lightColor: newValue } ) }
-				/>
-				<ColorPalette
-					colors={ colors }
-					value={ attributes.darkColor }
-					onChange={ ( newValue ) => setAttributes( { darkColor: newValue } ) }
-				/>
 			</PanelBody>
 		</InspectorControls>
 	</div>;
 };
-
-export default Edit;

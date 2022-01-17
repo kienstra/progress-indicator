@@ -1,4 +1,4 @@
-const ProgressIndicator = ( {
+export default ( {
 	attributes,
 } ) => {
 	return <div className="gcb-progress-indicator">
@@ -37,5 +37,3 @@ const ProgressIndicator = ( {
 		} ) }
 	</div>;
 };
-
-export default ProgressIndicator;
