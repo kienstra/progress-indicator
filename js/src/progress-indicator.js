@@ -8,15 +8,15 @@
 export default ( {
 	attributes,
 } ) => {
-	return <div className="gcb-progress-indicator">
+	return <div className="pi-progress-indicator">
 		{ /* Step Lines  */ }
-		<div className="gcb-progress-indicator__lines">
+		<div className="pi-progress-indicator__lines">
 			{ [ ...Array( attributes.numberOfSteps - 1 ) ].map( ( value, index ) =>
 				<div
 					key={ index }
 					className={ attributes.currentStep > index + 1
-						? 'gcb-progress-indicator__line gcb-progress-indicator__complete-line'
-						: 'gcb-progress-indicator__line'
+						? 'pi-progress-indicator__line pi-progress-indicator__complete-line'
+						: 'pi-progress-indicator__line'
 					}
 				/>
 			) }
@@ -24,12 +24,12 @@ export default ( {
 		{ /* Step Circles */ }
 		{ [ ...Array( attributes.numberOfSteps ) ].map( ( value, index ) => {
 			const stepNumber = index + 1;
-			let stepClasses = 'gcb-progress-indicator__step';
+			let stepClasses = 'pi-progress-indicator__step';
 
 			if ( stepNumber === attributes.currentStep ) {
-				stepClasses += ' gcb-progress-indicator__current-step';
+				stepClasses += ' pi-progress-indicator__current-step';
 			} else if ( stepNumber < attributes.currentStep ) {
-				stepClasses += ' gcb-progress-indicator__complete-step';
+				stepClasses += ' pi-progress-indicator__complete-step';
 			}
 
 			return <div

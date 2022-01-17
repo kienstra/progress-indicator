@@ -1,4 +1,4 @@
-.gcb-progress-indicator {
+.pi-progress-indicator {
     position: relative;
     display: flex;
     width: 100%;
@@ -8,7 +8,7 @@
     margin-bottom: 2rem;
 }
 
-.gcb-progress-indicator__lines {
+.pi-progress-indicator__lines {
     position: absolute;
     width: 100%;
     display: flex;
@@ -18,17 +18,17 @@
     padding-right: 17px;
 }
 
-.gcb-progress-indicator__line {
+.pi-progress-indicator__line {
     flex-grow: 1;
     height: 2px;
     background-color: #D1D5DB;
 }
 
-.gcb-progress-indicator__complete-line {
+.pi-progress-indicator__complete-line {
     background-color: #10B981;
 }
 
-.gcb-progress-indicator__step {
+.pi-progress-indicator__step {
     position: relative;
     display: flex;
     align-items: center;
@@ -44,13 +44,13 @@
     font-family: sans-serif;
 }
 
-.gcb-progress-indicator__current-step {
+.pi-progress-indicator__current-step {
     color: #10B981;
     border: 2px solid #10B981;
     box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px, rgb(167, 243, 208) 0px 0px 0px 4px, rgba(0, 0, 0, 0) 0px 0px 0px 0px
 }
 
-.gcb-progress-indicator__complete-step {
+.pi-progress-indicator__complete-step {
     background-color: #10B981;
     color: #ECFDF5;
     border: 2px solid #10B981;
