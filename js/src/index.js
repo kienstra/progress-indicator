@@ -11,7 +11,7 @@ import block from '../../block.json';
 import Edit from './edit';
 import Save from './save';
 
-const { apiVersion, name, category, icon, attributes } = block;
+const { apiVersion, attributes, category, icon, keywords, name } = block;
 
 /**
  * @typedef {Object} Attributes The block attributes.
@@ -26,13 +26,16 @@ registerBlockType( name, {
 		'A block that lets you easily display a progress indicator on your WordPress posts or pages.',
 		'progress-indicator'
 	),
-	keywords: [
-		__( 'progress', 'progress-indicator' ),
-		__( 'steps', 'progress-indicator' ),
-	],
+	attributes,
 	category,
 	icon,
-	attributes,
+	keywords,
+	example: {
+		attributes: {
+			numberOfSteps: 5,
+			currentStep: 2,
+		},
+	},
 	edit: Edit,
 	save: Save,
 } );

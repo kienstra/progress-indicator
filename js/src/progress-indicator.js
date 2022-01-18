@@ -35,7 +35,6 @@ export default ( {
 			return <div
 				key={ index }
 				className={ stepClasses }
-				style={ { backgroundColor: attributes.color } }
 			>
 				{ attributes.currentStep > stepNumber
 					? <svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
