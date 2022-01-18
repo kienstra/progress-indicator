@@ -35,6 +35,8 @@
     "check-licenses": "wp-scripts check-licenses --prod --gpl2",
     "build": "wp-scripts build",
     "dev": "wp-scripts start",
+    "lint:css": "wp-scripts lint-style css",
+    "lint:css:fix": "wp-scripts lint-style css --fix",
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:js": "wp-scripts lint-js js/src",
     "lint:js:fix": "npm run lint:js -- --fix",
