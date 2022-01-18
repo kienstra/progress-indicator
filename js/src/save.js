@@ -24,7 +24,7 @@ import ProgressIndicator from './progress-indicator';
 export default ( {
 	attributes,
 } ) => {
-	const blockProps = useBlockProps();
+	const blockProps = useBlockProps.save();
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
