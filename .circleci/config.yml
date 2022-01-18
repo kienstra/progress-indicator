@@ -4,14 +4,19 @@ orbs:
   node: circleci/node@4.1
 
 jobs:
-  lint-js:
+  lint:
     docker:
       - image: cimg/node:14.18.3
     steps:
       - checkout
       - node/install-packages
-      - run: npm run lint:js
+      - run:
+          command: |
+            npm run lint:css
+            npm run lint:js
+            npm run lint:pgk-json
+
 workflows:
-  js-flow:
+  lint-flow:
     jobs:
-      - lint-js
+      - lint
