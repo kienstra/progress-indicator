@@ -5,12 +5,14 @@
     "plugin:@wordpress/eslint-plugin/recommended-with-formatting",
     "plugin:jsx-a11y/recommended"
   ],
-  "settings": {
-    "jsdoc": {
-      "mode": "typescript"
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
   },
   "plugins": [
+    "jsx",
     "jsx-a11y"
   ],
   "rules": {
@@ -21,5 +23,10 @@
         "allowedTextDomain": "progress-indicator"
       }
     ]
+  },
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
   }
 }

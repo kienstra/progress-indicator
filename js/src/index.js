@@ -24,7 +24,7 @@ registerBlockType( name, {
 	title: __( 'Progress Indicator', 'progress-indicator' ),
 	description: __(
 		'A block that lets you easily display a progress indicator on your WordPress posts or pages.',
-		'progress-indicator'
+		'progress-indicator',
 	),
 	attributes,
 	category,

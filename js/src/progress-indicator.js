@@ -18,7 +18,7 @@ export default ( {
 						? 'pi-progress-indicator__line pi-progress-indicator__complete-line'
 						: 'pi-progress-indicator__line'
 					}
-				/>
+				/>,
 			) }
 		</div>
 		{ /* Step Circles */ }
