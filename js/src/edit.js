@@ -30,7 +30,6 @@ export default ( {
 			<PanelBody>
 				<RangeControl
 					label={ __( 'Number of Steps', 'progress-indicator' ) }
-					type="number"
 					value={ attributes.numberOfSteps }
 					onChange={ ( newValue ) => {
 						setAttributes( { numberOfSteps: Number( newValue ) } );
@@ -40,7 +39,6 @@ export default ( {
 				/>
 				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
-					type="number"
 					value={ attributes.currentStep }
 					onChange={ ( newValue ) => {
 						setAttributes( { currentStep: Number( newValue ) } );
