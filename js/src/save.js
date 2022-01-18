@@ -1,6 +1,12 @@
 /**
+ * External dependencies
+ */
+import * as React from 'react';
+
+/**
  * WordPress dependencies
  */
+// @ts-ignore: declaration file is outdated.
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -13,7 +19,7 @@ import ProgressIndicator from './progress-indicator';
  *
  * @param {Object}                       props            The component props.
  * @param {import('./index').Attributes} props.attributes The block attributes.
- * @return {Function} The component.
+ * @return {React.ReactElement} The component.
  */
 export default ( {
 	attributes,

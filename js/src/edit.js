@@ -1,8 +1,14 @@
 /**
+ * External dependencies
+ */
+import * as React from 'react';
+
+/**
  * WordPress dependencies
  */
+// @ts-ignore: declaration file is outdated.
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { RangeControl, PanelBody } from '@wordpress/components';
+import { PanelBody, RangeControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -16,7 +22,7 @@ import ProgressIndicator from './progress-indicator';
  * @param {Object}                       props               The component props.
  * @param {import('./index').Attributes} props.attributes    The block attributes.
  * @param {Function}                     props.setAttributes Sets the new attributes.
- * @return {Function} The component.
+ * @return {React.ReactElement} The component.
  */
 export default ( {
 	attributes,

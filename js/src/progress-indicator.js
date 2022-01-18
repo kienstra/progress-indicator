@@ -1,9 +1,14 @@
 /**
+ * External dependencies
+ */
+import * as React from 'react';
+
+/**
  * The progress indicator.
  *
  * @param {Object}                       props            The component props.
  * @param {import('./index').Attributes} props.attributes The block attributes.
- * @return {Function} The component.
+ * @return {React.ReactElement} The component.
  */
 export default ( {
 	attributes,

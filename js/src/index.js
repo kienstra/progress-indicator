@@ -19,6 +19,7 @@ const { apiVersion, attributes, category, icon, keywords, name } = block;
  * @property {number} currentStep   The step that the indicator is on.
  */
 
+// @ts-ignore The declaration file looks to be wrong.
 registerBlockType( name, {
 	apiVersion,
 	title: __( 'Progress Indicator', 'progress-indicator' ),
