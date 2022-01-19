@@ -45,6 +45,6 @@
     "lint:js": "wp-scripts lint-js js/src",
     "lint:js:fix": "npm run lint:js -- --fix",
     "packages-update": "wp-scripts packages-update",
-    "test:js": "wp-scripts test-unit-js --config=jest.config.js"
+    "test:js": "wp-scripts test-unit-js"
   }
 }
