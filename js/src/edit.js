@@ -20,7 +20,7 @@ import ProgressIndicator from './progress-indicator';
  * The component for the editor.
  *
  * @param {{
- * 	attributes: import('./index').Attributes,
+ *  attributes: import('./index').Attributes,
  *  setAttributes: Function
  * }} props
  * @return {React.ReactElement} The component.
