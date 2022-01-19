@@ -1,52 +1,58 @@
 /**
+ * External dependencies
+ */
+import * as React from 'react';
+
+/**
  * WordPress dependencies
  */
+// @ts-ignore: declaration file is outdated.
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { ColorPalette, TextControl, PanelBody } from '@wordpress/components';
+import { PanelBody, RangeControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
-import { useSelect } from '@wordpress/data';
+
+/**
+ * Internal dependencies
+ */
 import ProgressIndicator from './progress-indicator';
 
-const Edit = ( {
+/**
+ * The component for the editor.
+ *
+ * @param {Object}                       props               The component props.
+ * @param {import('./index').Attributes} props.attributes    The block attributes.
+ * @param {Function}                     props.setAttributes Sets the new attributes.
+ * @return {React.ReactElement} The component.
+ */
+export default ( {
 	attributes,
 	setAttributes,
 } ) => {
-	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
-	return <div { ...useBlockProps() }>
+	const blockProps = useBlockProps();
+
+	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
 			<PanelBody>
-				<TextControl
+				<RangeControl
 					label={ __( 'Number of Steps', 'progress-indicator' ) }
-					type="number"
 					value={ attributes.numberOfSteps }
 					onChange={ ( newValue ) => {
 						setAttributes( { numberOfSteps: Number( newValue ) } );
 					} }
+					min={ 1 }
 					max={ 10 }
 				/>
-				<TextControl
+				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
-					type="number"
 					value={ attributes.currentStep }
 					onChange={ ( newValue ) => {
 						setAttributes( { currentStep: Number( newValue ) } );
 					} }
+					min={ 1 }
 					max={ attributes.numberOfSteps }
-				/>
-				<ColorPalette
-					colors={ colors }
-					value={ attributes.lightColor }
-					onChange={ ( newValue ) => setAttributes( { lightColor: newValue } ) }
-				/>
-				<ColorPalette
-					colors={ colors }
-					value={ attributes.darkColor }
-					onChange={ ( newValue ) => setAttributes( { darkColor: newValue } ) }
 				/>
 			</PanelBody>
 		</InspectorControls>
 	</div>;
 };
-
-export default Edit;

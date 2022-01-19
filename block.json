@@ -1,0 +1,22 @@
+{
+	"apiVersion": 2,
+	"name": "progress-indicator/progress-indicator",
+	"title": "Progress Indicator",
+	"description": "A block that lets you easily display a progress indicator on your WordPress posts or pages.",
+	"attributes": {
+		"numberOfSteps":  {
+			"type": "number",
+			"default": 5
+		},
+		"currentStep":  {
+			"type": "number",
+			"default": 2
+		}
+	},
+	"category": "text",
+	"editorScript": "file:js/dist/index.js",
+	"icon": "visibility",
+	"keywords": [ "progress", "steps" ],
+	"style": "file:css/block.css",
+	"textdomain": "progress-indicator"
+}

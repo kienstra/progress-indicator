@@ -1,13 +1,13 @@
 /**
  * External dependencies
  */
- const path = require( 'path' );
+const path = require( 'path' );
 
- /**
-  * WordPress dependencies
-  */
- const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
- 
+/**
+ * WordPress dependencies
+ */
+const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+
 module.exports = {
 	...defaultConfig,
 	entry: {

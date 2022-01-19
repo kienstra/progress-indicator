@@ -17,5 +17,5 @@
 add_action( 'init', 'progress_indicator_register_block' );
 
 function progress_indicator_register_block() {
-	register_block_type_from_metadata( __DIR__ . '/js/src' );
+	register_block_type_from_metadata( __DIR__ );
 }

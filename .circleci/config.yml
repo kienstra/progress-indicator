@@ -1,0 +1,22 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.1
+
+jobs:
+  lint:
+    docker:
+      - image: cimg/node:14.18.3
+    steps:
+      - checkout
+      - node/install-packages
+      - run:
+          command: |
+            npm run lint:css
+            npm run lint:js
+            npm run lint:pgk-json
+
+workflows:
+  lint-flow:
+    jobs:
+      - lint

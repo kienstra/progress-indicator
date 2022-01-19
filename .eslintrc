@@ -1,6 +1,32 @@
 // Enables in-line/in-editor linting
 {
-    "extends": [
-      "plugin:@wordpress/eslint-plugin/recommended-with-formatting" 
+  "root": true,
+  "extends": [
+    "plugin:@wordpress/eslint-plugin/recommended-with-formatting",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "jsx",
+    "jsx-a11y"
+  ],
+  "rules": {
+    "@wordpress/dependency-group": "error",
+    "@wordpress/i18n-text-domain": [
+      "error",
+      {
+        "allowedTextDomain": "progress-indicator"
+      }
     ]
+  },
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  }
 }
