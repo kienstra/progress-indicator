@@ -22,10 +22,11 @@
     "@wordpress/components": "19.2.0",
     "@wordpress/data": "6.1.5",
     "@wordpress/i18n": "4.2.4",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react": "16.14.0",
+    "react-dom": "16.14.0"
   },
   "devDependencies": {
+    "@testing-library/react": "12.1.2",
     "@types/wordpress__block-editor": "6.0.4",
     "@types/wordpress__components": "14.0.9",
     "@wordpress/scripts": "19.2.3",
@@ -43,6 +44,7 @@
     "lint:pkg-json": "wp-scripts lint-pkg-json",
     "lint:js": "wp-scripts lint-js js/src",
     "lint:js:fix": "npm run lint:js -- --fix",
-    "packages-update": "wp-scripts packages-update"
+    "packages-update": "wp-scripts packages-update",
+    "test:js": "wp-scripts test-unit-js --config=jest.config.js"
   }
 }
