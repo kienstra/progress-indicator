@@ -29,4 +29,4 @@ export default ( {
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 	</div>;
-}
+};
