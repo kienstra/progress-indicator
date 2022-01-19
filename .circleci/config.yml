@@ -14,7 +14,7 @@ jobs:
           command: |
             npm run lint:css
             npm run lint:js
-            npm run lint:pgk-json
+            npm run lint:pkg-json
 
 workflows:
   lint-flow:
