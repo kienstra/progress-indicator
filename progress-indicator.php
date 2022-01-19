@@ -11,7 +11,7 @@
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       progress-indicator
- * Domain Path:       /languages
+ * Domain Path:       languages
  */
 
 add_action( 'init', 'progress_indicator_register_block' );
