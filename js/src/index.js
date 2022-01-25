@@ -32,6 +32,7 @@ registerBlockType( name, {
 	icon,
 	keywords,
 	example: {
+		/** @type {Attributes} */
 		attributes: {
 			numberOfSteps: 5,
 			currentStep: 2,
