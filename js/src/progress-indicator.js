@@ -9,8 +9,8 @@ import * as React from 'react';
  * @param {{attributes: import('./index').Attributes}} props
  * @return {React.ReactElement} The component.
  */
-export default ( { attributes } ) =>
-	<div className="pi-progress-indicator">
+export default function ProgressIndicator( { attributes } ) {
+	return <div className="pi-progress-indicator">
 		{ /* Step Lines  */ }
 		<div className="pi-progress-indicator__lines">
 			{ [ ...Array( attributes.numberOfSteps - 1 ) ].map( ( value, index ) =>
@@ -44,3 +44,4 @@ export default ( { attributes } ) =>
 			</div>;
 		} ) }
 	</div>;
+}
