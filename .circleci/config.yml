@@ -2,7 +2,6 @@ version: 2.1
 
 orbs:
   node: circleci/node@4.1
-  composer: stockfiller/composer@1.0.0
 
 jobs:
   lint:
@@ -10,9 +9,8 @@ jobs:
       - image: cimg/php:7.4.5-node
     steps:
       - checkout
-      - composer/install
       - node/install-packages
-      - run: npm run lint
+      - run: composer install && npm run lint
 
 workflows:
   lint-flow:
