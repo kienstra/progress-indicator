@@ -1,5 +1,9 @@
 <?php
 /**
+ * Progress Indicator Block
+ *
+ * @package ProgressIndicatorBlock
+ *
  * Plugin Name:       Progress Indicator Block
  * Plugin URI:        https://robstinson.co/progress-indicator
  * Description:       A block that lets you easily display a progress indicator on your WordPress posts or pages.
@@ -16,6 +20,9 @@
 
 add_action( 'init', 'progress_indicator_register_block' );
 
+/**
+ * Registers the block with the block.json file.
+ */
 function progress_indicator_register_block() {
 	register_block_type_from_metadata( __DIR__ );
 }
