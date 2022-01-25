@@ -10,7 +10,8 @@ jobs:
     steps:
       - checkout
       - node/install-packages
-      - run: composer install && npm run lint
+      - run: composer install
+      - run: npm run lint
 
 workflows:
   lint-flow:
