@@ -25,7 +25,7 @@ import ProgressIndicator from './progress-indicator';
  * }} props
  * @return {React.ReactElement} The component.
  */
-export default ( { attributes, setAttributes } ) => {
+export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
 
 	return <div { ...blockProps }>
@@ -53,4 +53,4 @@ export default ( { attributes, setAttributes } ) => {
 			</PanelBody>
 		</InspectorControls>
 	</div>;
-};
+}

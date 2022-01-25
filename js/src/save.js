@@ -20,10 +20,10 @@ import ProgressIndicator from './progress-indicator';
  * @param {{attributes: import('./index').Attributes}} props
  * @return {React.ReactElement} The component.
  */
-export default ( { attributes } ) => {
+export default function Save( { attributes } ) {
 	const blockProps = useBlockProps.save();
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 	</div>;
-};
+}
