@@ -1,5 +1,5 @@
 module.exports = {
-  presets: [
-    '@wordpress/default',
-  ]
+	presets: [
+		'@wordpress/default',
+	]
 };

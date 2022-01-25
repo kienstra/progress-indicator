@@ -6,15 +6,12 @@ orbs:
 jobs:
   lint:
     docker:
-      - image: cimg/node:14.18.3
+      - image: cimg/php:7.4.5-node
     steps:
       - checkout
       - node/install-packages
-      - run:
-          command: |
-            npm run lint:css
-            npm run lint:js
-            npm run lint:pkg-json
+      - run: composer install
+      - run: npm run lint
 
 workflows:
   lint-flow:
