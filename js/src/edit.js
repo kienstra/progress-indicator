@@ -8,7 +8,8 @@ import * as React from 'react';
  */
 // @ts-ignore The declaration file is outdated.
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, RangeControl } from '@wordpress/components';
+import { ColorPalette, PanelBody, RangeControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -27,6 +28,7 @@ import ProgressIndicator from './progress-indicator';
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
+	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
@@ -49,6 +51,13 @@ export default function Edit( { attributes, setAttributes } ) {
 					}
 					min={ 1 }
 					max={ attributes.numberOfSteps }
+				/>
+				<ColorPalette
+					colors={ colors }
+					value={ attributes.color }
+					onChange={ ( newValue ) => 
+						setAttributes( { color: newValue } )
+					}
 				/>
 			</PanelBody>
 		</InspectorControls>

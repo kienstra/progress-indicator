@@ -21,11 +21,6 @@
 .pi-progress-indicator__line {
 	flex-grow: 1;
 	height: 2px;
-	background-color: #d1d5db;
-}
-
-.pi-progress-indicator__complete-line {
-	background-color: #10b981;
 }
 
 .pi-progress-indicator__step {
@@ -42,16 +37,4 @@
 	font-size: 14px;
 	font-weight: 600;
 	font-family: sans-serif;
-}
-
-.pi-progress-indicator__current-step {
-	color: #10b981;
-	border: 2px solid #10b981;
-	box-shadow: rgb(255, 255, 255) 0 0 0 0, rgb(167, 243, 208) 0 0 0 4px, rgba(0, 0, 0, 0) 0 0 0 0;
-}
-
-.pi-progress-indicator__complete-step {
-	background-color: #10b981;
-	color: #ecfdf5;
-	border: 2px solid #10b981;
 }
