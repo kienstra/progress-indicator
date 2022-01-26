@@ -4,7 +4,7 @@ orbs:
   node: circleci/node@4.1
 
 jobs:
-  lint:
+  lint-test:
     docker:
       - image: cimg/php:7.4.5-node
     steps:
@@ -12,8 +12,9 @@ jobs:
       - node/install-packages
       - run: composer install
       - run: npm run lint
+      - run: npm run test:js
 
 workflows:
   lint-flow:
     jobs:
-      - lint
+      - lint-test

@@ -26,6 +26,7 @@
     "react-dom": "^16.14.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/wordpress__block-editor": "^6.0.4",
     "@types/wordpress__components": "^14.0.9",
