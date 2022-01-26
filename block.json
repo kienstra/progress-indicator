@@ -17,7 +17,7 @@
 	},
 	"category": "design",
 	"editorScript": "file:js/dist/index.js",
-	"icon": "visibility",
+	"icon": "chart-area",
 	"keywords": [ "progress", "steps" ],
 	"style": "file:css/block.css",
 	"textdomain": "progress-indicator"
