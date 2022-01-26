@@ -36,6 +36,7 @@ test( 'ProgressIndicator with current step of 5/5', () => {
 		/>
 	);
 
+	expect( screen.queryByText( 4 ) ).not.toBeInTheDocument();
 	expect( screen.getByText( 5 ) ).toBeInTheDocument();
 	expect( screen.getAllByRole( 'img' ).length ).toEqual( 4 );
 } );
