@@ -1,0 +1,23 @@
+# Block JSON File
+
+Most content in modern WordPress is a block.
+
+This is similar to other editors you might know, like Notion.so or MailChimp.
+
+Blocks are usually interactive, so they have a React component to edit them.
+
+And they're saved to the database as HTML markup, with comments that have their attributes as JSON.
+
+Here's we're going to register a block so the editor is aware of it.
+
+The modern way to register a WordPress block is [with](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/) a `block.json` file.
+
+Because WordPress [recommends](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file) registering a block with PHP and JS, the `block.json` file makes this more DRY.
+
+We can mainly reference `block.json` in the PHP and JS functions.
+
+## Exercise
+
+### Files
+- `js/src/index.js`
+- `progress-indicator.php`
