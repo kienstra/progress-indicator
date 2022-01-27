@@ -53,6 +53,7 @@
     "lint:php": "composer lint",
     "lint:php:fix": "composer lint-fix",
     "packages-update": "wp-scripts packages-update",
-    "test:js": "wp-scripts test-unit-js"
+    "test:js": "wp-scripts test-unit-js",
+    "wp-env": "wp-env"
   }
 }
