@@ -14,22 +14,18 @@ export default function ProgressIndicator( { attributes } ) {
 	const color = tinycolor( attributes.color );
 	const isColorDark = color.getBrightness() < 130;
 
-	return <div className="pi-progress-indicator">
+	return <div className="pib-progress-indicator">
 		{ /* Step Lines  */ }
-		<div className="pi-progress-indicator__lines">
+		<div className="pib-progress-indicator__lines">
 			{ [ ...Array( attributes.numberOfSteps - 1 ) ].map( ( value, index ) => {
-				const isLineComplete = ( attributes.currentStep > index + 1 );
+				const isLineComplete = attributes.currentStep > index + 1;
 
 				return <div
+					key={ index }
 					style={ {
 						backgroundColor: isLineComplete ? attributes.color : '#d1d5db',
-
 					} }
-					key={ index }
-					className={ isLineComplete
-						? 'pi-progress-indicator__line pi-progress-indicator__complete-line'
-						: 'pi-progress-indicator__line'
-					}
+					className="pib-progress-indicator__line"
 				/>;
 			} ) }
 		</div>
@@ -52,7 +48,7 @@ export default function ProgressIndicator( { attributes } ) {
 				};
 			}
 
-			return <div key={ index } style={ style } className="pi-progress-indicator__step">
+			return <div key={ index } style={ style } className="pib-progress-indicator__step">
 				{ attributes.currentStep > stepNumber
 					? <svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 						<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />

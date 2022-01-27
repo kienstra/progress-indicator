@@ -28,7 +28,9 @@ import ProgressIndicator from './progress-indicator';
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
-	const { colors } = useSelect( ( select ) => select( 'core/block-editor' ).getSettings() );
+	const { colors } = useSelect(
+		( select ) => select( 'core/block-editor' ).getSettings()
+	);
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />

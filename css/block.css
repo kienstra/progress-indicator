@@ -1,4 +1,4 @@
-.pi-progress-indicator {
+.pib-progress-indicator {
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -8,7 +8,7 @@
 	margin-bottom: 2rem;
 }
 
-.pi-progress-indicator__lines {
+.pib-progress-indicator__lines {
 	position: absolute;
 	width: 100%;
 	display: flex;
@@ -16,12 +16,12 @@
 	align-items: center;
 }
 
-.pi-progress-indicator__line {
+.pib-progress-indicator__line {
 	flex-grow: 1;
 	height: 2px;
 }
 
-.pi-progress-indicator__step {
+.pib-progress-indicator__step {
 	position: relative;
 	display: flex;
 	align-items: center;
