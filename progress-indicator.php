@@ -20,9 +20,8 @@
 
 add_action( 'init', 'progress_indicator_register_block' );
 
-/**
- * Registers the block with the block.json file.
- */
-function progress_indicator_register_block() {
-	register_block_type_from_metadata( __DIR__ );
-}
+// Define a function progress_indicator_register_block().
+// It should simply call the PHP function to register a block
+// That function's only argument should be the directory of this plugin.
+// That's where it'll look for the block.json file.
+// Do npm run lint:php to see if there's anything else to add.
