@@ -21,7 +21,8 @@
 add_action( 'init', 'progress_indicator_register_block' );
 
 // Define a function progress_indicator_register_block().
-// It should simply call the PHP function to register a block
-// That function's only argument should be the directory of this plugin.
+// That function should simply call the PHP function to register a block: https://developer.wordpress.org/reference/functions/register_block_type_from_metadata/
+// And that function's only argument should be the directory of this plugin.
+// You can get that directory from a magic constant: https://www.php.net/manual/en/language.constants.magic.php
 // That's where it'll look for the block.json file.
 // Do npm run lint:php to see if there's anything else to add.
