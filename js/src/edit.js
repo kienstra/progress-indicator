@@ -8,7 +8,8 @@ import * as React from 'react';
  */
 // @ts-ignore The declaration file is outdated.
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody, RangeControl } from '@wordpress/components';
+import { ColorPalette, PanelBody, RangeControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
 /**
@@ -27,20 +28,23 @@ import ProgressIndicator from './progress-indicator';
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
+	const { colors } = useSelect(
+		( select ) => select( 'core/block-editor' ).getSettings()
+	);
 
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
-			<PanelBody>
-				<RangeControl
-					label={ __( 'Number of Steps', 'progress-indicator' ) }
-					value={ attributes.numberOfSteps }
+			<PanelBody title={ __( 'Colors', 'progress-indicator' ) }>
+				<ColorPalette
+					colors={ colors }
+					value={ attributes.color }
 					onChange={ ( newValue ) =>
-						setAttributes( { numberOfSteps: Number( newValue ) } )
+						setAttributes( { color: newValue } )
 					}
-					min={ 1 }
-					max={ 10 }
 				/>
+			</PanelBody>
+			<PanelBody title={ __( 'Steps', 'progress-indicator' ) }>
 				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
 					value={ attributes.currentStep }
@@ -49,6 +53,15 @@ export default function Edit( { attributes, setAttributes } ) {
 					}
 					min={ 1 }
 					max={ attributes.numberOfSteps }
+				/>
+				<RangeControl
+					label={ __( 'Number of Steps', 'progress-indicator' ) }
+					value={ attributes.numberOfSteps }
+					onChange={ ( newValue ) =>
+						setAttributes( { numberOfSteps: Number( newValue ) } )
+					}
+					min={ 1 }
+					max={ 10 }
 				/>
 			</PanelBody>
 		</InspectorControls>

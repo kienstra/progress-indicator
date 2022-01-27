@@ -4,20 +4,24 @@
 	"version": "0.1.0",
 	"name": "progress-indicator/progress-indicator",
 	"title": "Progress Indicator",
-	"description": "A block that lets you easily display a progress indicator on your WordPress posts or pages.",
+	"description": "Easily display a progress indicator on your WordPress posts or pages.",
 	"attributes": {
-		"numberOfSteps":  {
-			"type": "number",
-			"default": 5
+		"color": {
+			"type": "string",
+			"default": "#10b981"
 		},
 		"currentStep":  {
 			"type": "number",
 			"default": 2
+		},
+		"numberOfSteps":  {
+			"type": "number",
+			"default": 5
 		}
 	},
 	"category": "design",
 	"editorScript": "file:js/dist/index.js",
-	"icon": "visibility",
+	"icon": "chart-area",
 	"keywords": [ "progress", "steps" ],
 	"style": "file:css/block.css",
 	"textdomain": "progress-indicator"

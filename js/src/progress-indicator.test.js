@@ -15,6 +15,7 @@ test( 'ProgressIndicator with current step of 2/5', () => {
 			attributes={ {
 				numberOfSteps: 5,
 				currentStep: 2,
+				color: '#10b981',
 			} }
 		/>
 	);
@@ -32,6 +33,7 @@ test( 'ProgressIndicator with current step of 5/5', () => {
 			attributes={ {
 				numberOfSteps: 5,
 				currentStep: 5,
+				color: '#10b981',
 			} }
 		/>
 	);

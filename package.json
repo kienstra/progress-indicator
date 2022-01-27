@@ -7,11 +7,11 @@
   "keywords": [
     "wordpress"
   ],
-  "homepage": "https://github.com/kienstra/progress-indicator-block",
+  "homepage": "https://github.com/kienstra/progress-indicator",
   "repository": {
-    "url": "https://github.com/kienstra/progress-indicator-block/issues"
+    "url": "https://github.com/kienstra/progress-indicator/issues"
   },
-  "bugs": "https://github.com/kienstra/progress-indicator-block/issues",
+  "bugs": "https://github.com/kienstra/progress-indicator/issues",
   "engines": {
     "node": "14"
   },
@@ -23,13 +23,15 @@
     "@wordpress/data": "^6.1.5",
     "@wordpress/i18n": "^4.2.4",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0"
+    "react-dom": "^16.14.0",
+    "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/wordpress__block-editor": "^6.0.4",
     "@types/wordpress__components": "^14.0.9",
+    "@wordpress/env": "^4.2.0",
     "@wordpress/scripts": "^19.2.3",
     "acorn": "^8.7.0",
     "eslint-plugin-import": "^2.25.4",

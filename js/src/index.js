@@ -15,8 +15,9 @@ const { apiVersion, attributes, category, icon, keywords, name } = block;
 
 /**
  * @typedef {Object} Attributes The block attributes.
- * @property {number} numberOfSteps The total number of steps in the indicator.
+ * @property {string} color         The color of the indicators.
  * @property {number} currentStep   The step that the indicator is on.
+ * @property {number} numberOfSteps The total number of steps in the indicator.
  */
 
 // @ts-ignore The declaration file is probably wrong.
@@ -34,8 +35,9 @@ registerBlockType( name, {
 	example: {
 		/** @type {Attributes} */
 		attributes: {
-			numberOfSteps: 5,
+			color: '#10b981',
 			currentStep: 2,
+			numberOfSteps: 5,
 		},
 	},
 	edit: Edit,
