@@ -1,5 +1,5 @@
 {
-  "name": "kienstra/progress-indicator-block",
+  "name": "kienstra/progress-indicator",
   "type": "wordpress-plugin",
   "description": "A block for adding a progress indicator",
   "homepage": "https://github.com/kienstra/progress-indicator-block",
