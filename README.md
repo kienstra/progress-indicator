@@ -1,14 +1,14 @@
-# Create a WordPress Block
+# Develop a WordPress Block
 
 This format is taken from Kent C. Dodd's [courses](https://epicreact.dev).
 
-## What should you know?
+## What should you know first?
 
 Only the basics of React. The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/courses/the-beginner-s-guide-to-react) should look familiar.
 
-## What don't you need?
+## What don't you need to know?
 
-PHP knowledge. There's only 1 PHP file.
+PHP. There's only 1 PHP file.
 
 ## What will you learn?
 
@@ -18,7 +18,7 @@ This isn't a React course. It's a course on React in WordPress.
 
 ## Requirements
 
-[Composer](https://getcomposer.org/), [Node.js](https://nodejs.org/)
+[Node Version Manager](https://github.com/nvm-sh/nvm), [Composer](https://getcomposer.org/)
 
 ## Environment
 
@@ -60,4 +60,4 @@ This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484
 2. Read `INSTRUCTIONS.md`
 3. Do the exercise
 4. Watch the video for the exercise solution
-4. Repeat 1-4 with the next exercise
+4. Repeat steps 1-4 for the next exercise
