@@ -1,6 +1,10 @@
 # Develop a WordPress Block
 
-This format is taken from Kent C. Dodd's [courses](https://epicreact.dev).
+A tutorial on React in WordPress.
+
+[Rob Stinson](https://robstinson.co/) created this tutorial's block.
+
+And this uses [Kent C. Dodds](https://epicreact.dev)' format for exercises.
 
 ## What will you learn?
 

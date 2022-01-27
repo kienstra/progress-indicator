@@ -7,11 +7,11 @@
   "keywords": [
     "wordpress"
   ],
-  "homepage": "https://github.com/kienstra/progress-indicator-block",
+  "homepage": "https://github.com/kienstra/progress-indicator",
   "repository": {
-    "url": "https://github.com/kienstra/progress-indicator-block/issues"
+    "url": "https://github.com/kienstra/progress-indicator/issues"
   },
-  "bugs": "https://github.com/kienstra/progress-indicator-block/issues",
+  "bugs": "https://github.com/kienstra/progress-indicator/issues",
   "engines": {
     "node": "14"
   },
