@@ -2,7 +2,7 @@
  * External dependencies
  */
 import * as React from 'react';
-import tinycolor from 'tinycolor2';
+import tinycolor2 from 'tinycolor2';
 
 /**
  * The progress indicator component.
@@ -11,7 +11,7 @@ import tinycolor from 'tinycolor2';
  * @return {React.ReactElement} The component.
  */
 export default function ProgressIndicator( { attributes } ) {
-	const color = tinycolor( attributes.color );
+	const color = tinycolor2( attributes.color );
 	const isColorDark = color.getBrightness() < 130;
 
 	return <div className="pib-progress-indicator">

@@ -20,9 +20,7 @@ The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/cours
 
 ## What don't you need to know?
 
-PHP. There's only 1 PHP file.
-
-This isn't a React course. It's a course on React in WordPress.
+PHP. There's only 1 PHP file, and you can learn as you go.
 
 ## Requirements
 
