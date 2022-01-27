@@ -36,15 +36,15 @@ export default function ProgressIndicator( { attributes } ) {
 
 			if ( attributes.currentStep === stepNumber ) {
 				style = {
-					color: isColorDark ? attributes.color : '#6b7280',
 					border: `2px solid ${ attributes.color }`,
 					boxShadow: `#ffffff 0 0 0 0, ${ color.lighten( 43 ).toString() } 0 0 0 4px, #000000 0 0 0 0`,
+					color: isColorDark ? attributes.color : '#6b7280',
 				};
 			} else if ( attributes.currentStep > stepNumber ) {
 				style = {
 					backgroundColor: attributes.color,
-					color: isColorDark ? '#ecfdf5' : '#6b7280',
 					border: `2px solid ${ attributes.color }`,
+					color: isColorDark ? '#ecfdf5' : '#6b7280',
 				};
 			}
 
