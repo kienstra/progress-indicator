@@ -57,6 +57,8 @@ Or you can use the bundled environment:
 npm run wp-env start
 ```
 
+That will require [Docker](https://www.docker.com/).
+
 Go to http://localhost:8888 for your environment.
 
 The username is `admin` and the password is `password`.
