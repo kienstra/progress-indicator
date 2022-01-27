@@ -1,6 +1,6 @@
 # Create a WordPress Block
 
-The format is inspired by Kent C. Dodd's [courses](https://epicreact.dev).
+This format is taken from Kent C. Dodd's [courses](https://epicreact.dev).
 
 ## What should you know?
 
@@ -18,7 +18,7 @@ This isn't a React course. It's a course on React in WordPress.
 
 ## Requirements
 
-[Composer](https://getcomposer.org/) and [Node.js](https://nodejs.org/)
+[Composer](https://getcomposer.org/), [Node.js](https://nodejs.org/)
 
 ## Environment
 
@@ -32,7 +32,7 @@ npm run wp-env start
 
 Go to http://localhost:8888 for your environment.
 
-The Username is `admin` and the Password is `password`.
+The username is `admin` and the password is `password`.
 
 For the other `wp-env` commands, see the [Command Reference](https://github.com/wordPress/gutenberg/tree/trunk/packages/env#command-reference).
 
@@ -43,7 +43,7 @@ Use the correct Node version:
 nvm use
 ```
 
-Install:
+Install dependencies:
 ```sh
 npm install && composer install
 ```
@@ -52,3 +52,12 @@ Watch for changes:
 ```sh
 npm run dev
 ```
+
+## Exercises
+This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484eb61c3e7bb27d151ca32b041662922536#workflow) Kent C. Dodds.
+
+1. `checkout` the branch for the exercise, like `exercise/1-block-json`
+2. Read `INSTRUCTIONS.md`
+3. Do the exercise
+4. Watch the video for the exercise solution
+4. Repeat 1-4 with the next exercise
