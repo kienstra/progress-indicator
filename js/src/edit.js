@@ -36,14 +36,12 @@ export default function Edit( { attributes, setAttributes } ) {
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
 			<PanelBody>
-				<RangeControl
-					label={ __( 'Number of Steps', 'progress-indicator' ) }
-					value={ attributes.numberOfSteps }
+				<ColorPalette
+					colors={ colors }
+					value={ attributes.color }
 					onChange={ ( newValue ) =>
-						setAttributes( { numberOfSteps: Number( newValue ) } )
+						setAttributes( { color: newValue } )
 					}
-					min={ 1 }
-					max={ 10 }
 				/>
 				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
@@ -54,12 +52,14 @@ export default function Edit( { attributes, setAttributes } ) {
 					min={ 1 }
 					max={ attributes.numberOfSteps }
 				/>
-				<ColorPalette
-					colors={ colors }
-					value={ attributes.color }
+				<RangeControl
+					label={ __( 'Number of Steps', 'progress-indicator' ) }
+					value={ attributes.numberOfSteps }
 					onChange={ ( newValue ) =>
-						setAttributes( { color: newValue } )
+						setAttributes( { numberOfSteps: Number( newValue ) } )
 					}
+					min={ 1 }
+					max={ 10 }
 				/>
 			</PanelBody>
 		</InspectorControls>
