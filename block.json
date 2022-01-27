@@ -13,6 +13,10 @@
 		"currentStep":  {
 			"type": "number",
 			"default": 2
+		},
+		"color": {
+			"type": "string",
+			"default": "#10b981"
 		}
 	},
 	"category": "design",

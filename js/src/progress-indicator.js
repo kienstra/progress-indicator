@@ -11,6 +11,9 @@ import tinycolor from 'tinycolor2';
  * @return {React.ReactElement} The component.
  */
 export default function ProgressIndicator( { attributes } ) {
+	const color = tinycolor( attributes.color );
+	const isColorDark = color.getBrightness() < 130;
+
 	return <div className="pi-progress-indicator">
 		{ /* Step Lines  */ }
 		<div className="pi-progress-indicator__lines">
@@ -33,26 +36,23 @@ export default function ProgressIndicator( { attributes } ) {
 		{ /* Step Circles */ }
 		{ [ ...Array( attributes.numberOfSteps ) ].map( ( value, index ) => {
 			const stepNumber = index + 1;
-			let stepClasses = 'pi-progress-indicator__step';
 			let style = {};
 
 			if ( attributes.currentStep === stepNumber ) {
-				stepClasses += ' pi-progress-indicator__current-step';
 				style = {
-					color: attributes.color,
+					color: isColorDark ? attributes.color : '#6b7280',
 					border: `2px solid ${ attributes.color }`,
-					boxShadow: `#ffffff 0 0 0 0, ${ tinycolor( attributes.color ).lighten( 43 ).toString() } 0 0 0 4px, #000000 0 0 0 0`,
+					boxShadow: `#ffffff 0 0 0 0, ${ color.lighten( 43 ).toString() } 0 0 0 4px, #000000 0 0 0 0`,
 				};
 			} else if ( attributes.currentStep > stepNumber ) {
-				stepClasses += ' pi-progress-indicator__complete-step';
 				style = {
 					backgroundColor: attributes.color,
-					color: '#ecfdf5',
+					color: isColorDark ? '#ecfdf5' : '#6b7280',
 					border: `2px solid ${ attributes.color }`,
 				};
 			}
 
-			return <div key={ index } style={ style } className={ stepClasses }>
+			return <div key={ index } style={ style } className="pi-progress-indicator__step">
 				{ attributes.currentStep > stepNumber
 					? <svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 						<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />

@@ -55,7 +55,7 @@ export default function Edit( { attributes, setAttributes } ) {
 				<ColorPalette
 					colors={ colors }
 					value={ attributes.color }
-					onChange={ ( newValue ) => 
+					onChange={ ( newValue ) =>
 						setAttributes( { color: newValue } )
 					}
 				/>
