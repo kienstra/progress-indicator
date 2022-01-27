@@ -35,7 +35,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return <div { ...blockProps }>
 		<ProgressIndicator attributes={ attributes } />
 		<InspectorControls>
-			<PanelBody>
+			<PanelBody title={ __( 'Colors', 'progress-indicator' ) }>
 				<ColorPalette
 					colors={ colors }
 					value={ attributes.color }
@@ -43,6 +43,8 @@ export default function Edit( { attributes, setAttributes } ) {
 						setAttributes( { color: newValue } )
 					}
 				/>
+			</PanelBody>
+			<PanelBody title={ __( 'Steps', 'progress-indicator' ) }>
 				<RangeControl
 					label={ __( 'Current Step', 'progress-indicator' ) }
 					value={ attributes.currentStep }
