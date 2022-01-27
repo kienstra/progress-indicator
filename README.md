@@ -6,9 +6,17 @@ This format is taken from Kent C. Dodd's [courses](https://epicreact.dev).
 
 How to create a content block in WordPress.
 
+This isn't a React course. It's a course on React in WordPress.
+
+You'll learn how to develop for the WP block editor.
+
+And you'll see typical setup of a WP block plugin.
+
 ## What should you know first?
 
-Only the basics of React. The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/courses/the-beginner-s-guide-to-react) should look familiar.
+Only the basics of React.
+
+The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/courses/the-beginner-s-guide-to-react) should look familiar.
 
 ## What don't you need to know?
 

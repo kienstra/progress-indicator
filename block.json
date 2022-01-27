@@ -4,7 +4,7 @@
 	"version": "0.1.0",
 	"name": "progress-indicator/progress-indicator",
 	"title": "Progress Indicator",
-	"description": "A block that lets you easily display a progress indicator on your WordPress posts or pages.",
+	"description": "Easily display a progress indicator on your WordPress posts or pages.",
 	"attributes": {
 		"color": {
 			"type": "string",
