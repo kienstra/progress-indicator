@@ -21,7 +21,7 @@ The modern way to register a WordPress block is [with](https://developer.wordpre
 
 It should go in the root of the plugin if there's only 1 block in the plugin, like in this tutorial.
 
-The `block.json` file [must be](https://github.com/WordPress/wporg-plugin-guidelines/blob/28d945f414db3bb42e04805fb109e7178cbabc9a/blocks.md#4-block-plugins-must-include-a-blockjson-file) in the root of the plugin to be in the [block directory](https://wordpress.org/plugins/browse/block/).
+The `block.json` file [must be](https://github.com/WordPress/wporg-plugin-guidelines/blob/28d945f414db3bb42e04805fb109e7178cbabc9a/blocks.md#4-block-plugins-must-include-a-blockjson-file) in the root of the plugin to be in the [Block Directory](https://wordpress.org/plugins/browse/block/).
 
 Also, WordPress [recommends](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file) registering a block with PHP and JS.
 
