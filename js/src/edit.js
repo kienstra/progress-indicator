@@ -15,7 +15,7 @@ import { __ } from '@wordpress/i18n';
 /**
  * Internal dependencies
  */
-// Import the ProgressIndicator
+// 🚧 Import the ProgressIndicator
 
 /**
  * The component for the editor.
@@ -33,7 +33,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	);
 
 	return <div { ...blockProps }>
-		{ /* Render the ProgressIndicator here, with the prop it expects. */ }
+		{ /* 🚧 Render the ProgressIndicator here, with the prop it expects. */ }
 		<InspectorControls>
 			<PanelBody title={ __( 'Colors', 'progress-indicator' ) }>
 				<ColorPalette

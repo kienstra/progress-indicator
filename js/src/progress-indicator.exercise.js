@@ -23,7 +23,7 @@ export default function ProgressIndicator( { attributes } ) {
 					backgroundColor: isLineComplete ? attributes.color : '#d1d5db',
 				};
 
-				// Return a <div /> with these properties:
+				// 🚧 Return a <div /> with these props:
 				// key: some unique value
 				// style: the style object above
 				// className: "pib-progress-indicator__line"
@@ -50,7 +50,7 @@ export default function ProgressIndicator( { attributes } ) {
 
 			return <div key={ index } style={ style } className="pib-progress-indicator__step">
 				{ /*
-					If the current step is more than stepNumber, render:
+					🚧 If the current step is more than stepNumber, render:
 						<svg role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 							<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
 						</svg>
