@@ -1,6 +1,6 @@
-# React the WordPress way
+# React, The WordPress Way
 
-Develop a WordPress block in a hands-on tutorial.
+A hands-on tutorial on developing a WordPress block.
 
 [Rob Stinson](https://robstinson.co/) created this tutorial's block.
 
@@ -73,9 +73,9 @@ For the other `wp-env` commands, see the [Command Reference](https://github.com/
 ## Exercise Steps
 This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484eb61c3e7bb27d151ca32b041662922536#workflow) Kent C. Dodds.
 
-1. `checkout` the branch for the exercise, like `exercise/1-block-json`
+1. `checkout` the branch for the exercise, like [exercise/1-block-json](https://github.com/kienstra/progress-indicator/tree/exercise/1-block-json)
 2. Read `INSTRUCTIONS.md`
 3. Find the `Files` heading in `INSTRUCTIONS.md`, and edit its files
 4. 🚧 will show where to edit
 5. Watch the video for the exercise solution
-6. Repeat steps 1-5 for the next exercise
+6. Go to the next exercise, and repeat steps 1-5
