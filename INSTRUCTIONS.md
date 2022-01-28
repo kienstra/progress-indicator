@@ -24,7 +24,9 @@ This adds class(es) and attributes from the [Block Supports](https://github.com/
 ```
 
 ## Exercise
-Edit the `Save` component, which will finish this block.
+Once you finish this `Save` component, this block will be done.
+
+It'll display on the front-end.
 
 You'll see a lot of [block validation](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#validation) notices.
 
