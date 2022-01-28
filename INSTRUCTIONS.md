@@ -34,5 +34,5 @@ This is normal when editing the `Save` component.
 
 Click 'Attempt Block Recovery' and continue developing.
 
-### Files
+### File
 - [js/src/save.exercise.js](https://github.com/kienstra/progress-indicator/blob/exercise/4-save-component/js/src/save.exercise.js)
