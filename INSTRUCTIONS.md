@@ -6,7 +6,7 @@ This is similar to other editors like [Medium](https://medium.com/), [Notion](ht
 
 Blocks are usually interactive, so they have a React component to edit them.
 
-And they're saved to the database as HTML markup, attributes stored in comments.
+And they're saved to the database as HTML markup, with attributes stored in comments.
 
 Here's an example of a saved Paragraph block:
 
