@@ -21,5 +21,5 @@ So the `block.json` file makes this more DRY, as we can use that file in both la
 ## Exercise
 
 ### Files
-- `js/src/index.js`
+- `js/src/index.exercise.js`
 - `progress-indicator.php`

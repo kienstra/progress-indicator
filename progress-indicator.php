@@ -20,7 +20,7 @@
 
 add_action( 'init', 'progress_indicator_register_block' );
 
-// Define a function progress_indicator_register_block().
+// 🚧 Define a function progress_indicator_register_block().
 // That function should simply call the PHP function to register a block: https://developer.wordpress.org/reference/functions/register_block_type_from_metadata/
 // And that function's only argument should be the directory of this plugin.
 // You can get that directory from a magic constant: https://www.php.net/manual/en/language.constants.magic.php
