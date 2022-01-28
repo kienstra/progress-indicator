@@ -19,7 +19,7 @@ export default function Save( { attributes } ) {
         ...
 ```
 
-This will class(es) to it and attributes from the [Block Supports](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-supports.md#supports) API:
+This adds class(es) and attributes from the [Block Supports](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-supports.md#supports) API:
 ```html
 <div class="wp-block-progress-indicator-progress-indicator">
 ```
