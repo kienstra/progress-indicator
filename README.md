@@ -1,6 +1,6 @@
-# Develop a WordPress Block
+# React the WordPress way
 
-A hands-on tutorial on doing React the WordPress way.
+Develop a WordPress block in a hands-on tutorial.
 
 [Rob Stinson](https://robstinson.co/) created this tutorial's block.
 
@@ -18,7 +18,7 @@ And you'll see typical setup of a WP block plugin.
 
 ## What should you know first?
 
-Only the basics of React.
+The basics of React and [modern JavaScript](https://kentcdodds.com/blog/javascript-to-know-for-react).
 
 The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/courses/the-beginner-s-guide-to-react) should look familiar.
 
@@ -52,7 +52,6 @@ npm run dev
 You can `checkout` this plugin to your own local WordPress environment.
 
 Or you can use the bundled environment:
-
 ```sh
 npm run wp-env start
 ```
@@ -66,6 +65,12 @@ The username is `admin` and the password is `password`.
 For the other `wp-env` commands, see the [Command Reference](https://github.com/wordPress/gutenberg/tree/trunk/packages/env#command-reference).
 
 ## Exercises
+1. [Block JSON](https://github.com/kienstra/progress-indicator/blob/exercise/1-block-json/INSTRUCTIONS.md)
+2. [Edit Component](https://github.com/kienstra/progress-indicator/blob/exercise/2-edit-component/INSTRUCTIONS.md)
+3. [Progress Indicator Component](https://github.com/kienstra/progress-indicator/blob/exercise/3-progress-indicator/INSTRUCTIONS.md)
+4. [Save Component](https://github.com/kienstra/progress-indicator/blob/exercise/4-save-component/INSTRUCTIONS.md)
+
+## Exercise Steps
 This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484eb61c3e7bb27d151ca32b041662922536#workflow) Kent C. Dodds.
 
 1. `checkout` the branch for the exercise, like `exercise/1-block-json`
