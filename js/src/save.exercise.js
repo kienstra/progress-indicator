@@ -8,6 +8,7 @@ import * as React from 'react';
  */
 // @ts-ignore The declaration file is outdated.
 // 🚧 Import useBlockProps from '@wordpress/block-editor'
+// See if it needs to have brackets or not, like import { useBlockProps }
 
 /**
  * Internal dependencies
@@ -21,9 +22,10 @@ import * as React from 'react';
  * @return {React.ReactElement} The component.
  */
 export default function Save( { attributes } ) {
-	// 🚧 Assign to a const the block props by calling useBlockProps.save()
+	// 🚧 Store a const here
+	// Its value should be useBlockProps.save()
 
-	return <div { /* 🚧 Spread the block props here, using the ... operator before the const name */ }>
+	return <div { /* 🚧 Spread the const you stored above, using the ... operator before the const name */ }>
 		{ /* 🚧 Render ProgressIndicator, and pass it the prop it expects */ }
 	</div>;
 }
