@@ -70,6 +70,7 @@ This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484
 
 1. `checkout` the branch for the exercise, like `exercise/1-block-json`
 2. Read `INSTRUCTIONS.md`
-3. Do the exercise
-4. Watch the video for the exercise solution
-4. Repeat steps 1-4 for the next exercise
+3. Find the `Files` heading in `INSTRUCTIONS.md`, and edit its files
+4. 🚧 will show where to edit
+5. Watch the video for the exercise solution
+6. Repeat steps 1-5 for the next exercise
