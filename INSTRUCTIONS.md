@@ -24,15 +24,15 @@ This adds classes, and sometimes attributes from the [Block Supports](https://gi
 ```
 
 ## Exercise
-Once you finish this `Save` component, this block will be done.
-
-It'll display on the front-end.
-
 You'll see a lot of [block validation](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#validation) notices.
 
 This is normal when editing the `Save` component.
 
 Click 'Attempt Block Recovery' and continue developing.
 
+Once you finish this `Save` component, this block will be done.
+
+It'll display on the front-end.
+
 ### File
-- [js/src/save.exercise.js](https://github.com/kienstra/progress-indicator/blob/exercise/4-save-component/js/src/save.exercise.js)
+- [js/src/save.exercise.js](js/src/save.exercise.js)
