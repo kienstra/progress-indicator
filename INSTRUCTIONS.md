@@ -17,4 +17,4 @@ By rendering components inside <InspectorControls>, they appear in the Inspector
 ## Exercise
 
 ### File
-- [js/src/edit.exercise.js](https://github.com/kienstra/progress-indicator/blob/exercise/2-edit-component/js/src/edit.exercise.js)
+- [js/src/edit.exercise.js](js/src/edit.exercise.js)
