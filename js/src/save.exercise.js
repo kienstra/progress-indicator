@@ -23,7 +23,7 @@ import * as React from 'react';
 export default function Save( { attributes } ) {
 	// 🚧 Declare a const here and give it the value of useBlockProps.save()
 
-	return <div { /* 🚧 Spread the const you stored above, using the ... operator before the const name */ }>
+	return <div { /* 🚧 Spread the const you declared above, using the ... operator before the const */ }>
 		{ /* 🚧 Render ProgressIndicator, and pass it the prop it expects */ }
 	</div>;
 }
