@@ -43,7 +43,7 @@ registerBlockType( block.name, {
 	// Most other values taken from block also.
 ```
 
-Hint: you can avoid always doing `block.` by [destructuring](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the properties of `block`.
+Hint: you can avoid doing `block.` by [destructuring](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the properties of `block`.
 
 ### Files
 - [js/src/index.exercise.js](js/src/index.exercise.js)
