@@ -10,7 +10,7 @@ And you'll almost be finished once you finish this exercise.
 
 When this works, `npm run lint:js` and `npm run test:js` should pass.
 
-In `ProgressIndicator`, you'll use a ternary conditional to render either an `<svg>` or a number.
+In `ProgressIndicator`, you'll conditionally render an `<svg>` or a number.
 
 When conditionally rendering in React, we'll usually use ternary conditionals:
 ```jsx
