@@ -1,6 +1,6 @@
-# React, The WordPress Way
+# Develop A WordPress Block
 
-A hands-on tutorial on developing a WordPress block.
+A hands-on tutorial on doing React the WordPress way.
 
 [Rob Stinson](https://robstinson.co/) created this tutorial's block.
 
