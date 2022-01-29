@@ -1,6 +1,6 @@
 # Save Component
 
-This React [component](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#save) determines what is saved to the database.
+This React [component](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#save) determines what's saved to the database.
 
 And what's saved to the database is what displays on the front-end.
 
