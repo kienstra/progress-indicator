@@ -40,7 +40,7 @@ In [js/src/index.exercise.js](js/src/index.exercise.js), `registerBlockType()` w
 ```js
 registerBlockType( block.name, {
 	apiVersion: block.apiVersion,
-    // Most other values taken from block also.
+	// Most other values taken from block also.
 ```
 
 ### Files
