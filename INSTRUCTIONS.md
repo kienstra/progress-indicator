@@ -23,5 +23,5 @@ When conditionally rendering in React, we'll usually use ternary conditionals:
 ```
 
 ### Files
-- [js/src/edit.js](js/src/edit.js)
 - [js/src/progress-indicator.exercise.js](js/src/progress-indicator.exercise.js)
+- [js/src/edit.js](js/src/edit.js)
