@@ -29,7 +29,7 @@ So the `block.json` file makes this more DRY, as we can use that file in both la
 
 You're going to register the block in JS and PHP.
 
-You can mainly use `block.json` for both.
+You can mainly use [block.json](block.json) for both.
 
 Look for the 🚧 in the exercise files for where to edit.
 
