@@ -7,9 +7,10 @@ import * as React from 'react';
  * WordPress dependencies
  */
 // @ts-ignore The declaration file is outdated.
+// 🚧 Also import useBlockProps from '@wordpress/block-editor'
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
-import { PanelBody } from '@wordpress/components';
 // 🚧 Also import a component from '@wordpress/components' to choose a color, and another component to choose a number: https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src
+import { PanelBody } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
 import { __ } from '@wordpress/i18n';
 
@@ -23,7 +24,7 @@ import { __ } from '@wordpress/i18n';
  * @return {React.ReactElement} The component.
  */
 export default function Edit( { attributes, setAttributes } ) {
-	const blockProps = useBlockProps();
+	const blockProps = // 🚧  Call useBlockProps.
 	const { colors } = useSelect(
 		// 🚧 Add an anonymous function here as an argument to useSelect().
 		// The function should accept select as a parameter.
