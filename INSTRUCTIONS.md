@@ -19,8 +19,6 @@ In this exercise, we're going to register a block so the editor is aware of it.
 
 The modern way to register a WordPress block is [with](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/) a `block.json` file.
 
-It should go in the root of the plugin if there's only 1 block in the plugin, like in this tutorial.
-
 The `block.json` file [must be present](https://github.com/WordPress/wporg-plugin-guidelines/blob/28d945f414db3bb42e04805fb109e7178cbabc9a/blocks.md#4-block-plugins-must-include-a-blockjson-file) to be eligible for the [Block Directory](https://wordpress.org/plugins/browse/block/).
 
 Also, WordPress [recommends](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file) registering a block with PHP and JS.
