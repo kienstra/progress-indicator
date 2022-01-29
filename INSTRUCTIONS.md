@@ -1,6 +1,6 @@
 # Block JSON File
 
-Most content in modern WordPress is a block.
+All content in the WordPress block eidtor is a block.
 
 This is similar to other editors like [Medium](https://medium.com/), [Notion](https://www.notion.so/), and [MailChimp](https://mailchimp.com/).
 
@@ -34,6 +34,14 @@ You're going to register the block in JS and PHP.
 You can mainly use `block.json` for both.
 
 Look for the 🚧 in the exercise files for where to edit.
+
+In [js/src/index.exercise.js](js/src/index.exercise.js), `registerBlockType()` will look like:
+
+```js
+registerBlockType( block.name, {
+	apiVersion: block.apiVersion,
+    // Most other values taken from block also.
+```
 
 ### Files
 - [js/src/index.exercise.js](js/src/index.exercise.js)
