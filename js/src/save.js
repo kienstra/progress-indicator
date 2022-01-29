@@ -6,8 +6,7 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
-// @ts-ignore The declaration file is outdated.
-import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
 /**
  * The component to save the markup.
@@ -15,7 +14,7 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {React.ReactElement} The component.
  */
 export default function Save() {
-	const blockProps = useBlockProps.save();
-
-	return <div { ...blockProps } />;
+	return <span>
+		{ __( 'This is a placeholder for the Progress Indicator block', 'progress-indicator' ) }
+	</span>;
 }
