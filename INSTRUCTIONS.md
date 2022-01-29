@@ -36,5 +36,5 @@ You can mainly use `block.json` for both.
 Look for the 🚧 in the exercise files for where to edit.
 
 ### Files
-- [js/src/index.exercise.js](https://github.com/kienstra/progress-indicator/blob/exercise/1-block-json/js/src/index.exercise.js)
-- [progress-indicator.php](https://github.com/kienstra/progress-indicator/blob/exercise/1-block-json/progress-indicator.php)
+- [js/src/index.exercise.js](js/src/index.exercise.js)
+- [progress-indicator.php](progress-indicator.php)
