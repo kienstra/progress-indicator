@@ -8,7 +8,6 @@ import * as React from 'react';
  */
 // @ts-ignore The declaration file is outdated.
 // 🚧 Import useBlockProps from '@wordpress/block-editor'
-// See if it needs to have brackets or not, like import { useBlockProps }
 
 /**
  * Internal dependencies
