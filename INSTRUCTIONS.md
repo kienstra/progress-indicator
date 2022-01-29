@@ -1,6 +1,6 @@
 # Block JSON File
 
-All content in the WordPress block eidtor is a block.
+All content in the WordPress block editor is a block.
 
 This is similar to other editors like [Medium](https://medium.com/), [Notion](https://www.notion.so/), and [MailChimp](https://mailchimp.com/).
 
