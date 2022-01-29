@@ -31,7 +31,7 @@ You're going to register the block in JS and PHP.
 
 You can mainly use [block.json](block.json) for both.
 
-Look for the 🚧 in the exercise files for where to edit.
+Look for 🚧 in the exercise files for where to edit.
 
 In [js/src/index.exercise.js](js/src/index.exercise.js), `registerBlockType()` will look like:
 
