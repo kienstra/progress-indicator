@@ -14,9 +14,15 @@ We'll render the block controls in [InspectorControls](https://github.com/WordPr
 
 By rendering components inside <InspectorControls>, they appear in the Inspector.
 
-The `Edit` component is very interactive.
+## Exercise
 
-It updates the block attributes and markup.
+You're going to write the `Edit` component.
+
+It's what that the user sees in the block editor.
+
+This component is very interactive.
+
+Its function is to update the block attributes and markup as the user edits the block.
 
 One of its `props` is `setAttributes`:
 
@@ -46,8 +52,6 @@ That object only needs one property, which is the name of the attribute:
 ```jsx
 setAttributes( { color: newValue } )
 ```
-
-## Exercise
 
 ### File
 - [js/src/edit.exercise.js](js/src/edit.exercise.js)
