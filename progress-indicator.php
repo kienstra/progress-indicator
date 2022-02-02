@@ -8,7 +8,7 @@
  * Plugin URI:        https://github.com/kienstra/progress-indicator
  * Description:       A block that lets you easily display a progress indicator on your WordPress posts or pages.
  * Version:           0.1.0
- * Requires at least: 5.6
+ * Requires at least: 5.8
  * Requires PHP:      7.2
  * Author:            Rob Stinson
  * Author URI:        https://robstinson.co
