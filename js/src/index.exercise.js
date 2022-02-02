@@ -24,6 +24,7 @@ import block from '../../block.json';
 registerBlockType( block.name, {
 	// 🚧 For the apiVersion, pass block.apiVersion.
 	// For the title, pass the same value as block.title, but translate it using __().
+	// The first argument of __() should be the string to translate, and the second argument should be 'progress-indicator'.
 	// For the description, pass the same description as block.description, but translate it using __().
 	// Pass the same attributes, category, icon, and keywords as in block.
 	example: {
