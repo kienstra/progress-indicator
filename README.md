@@ -1,6 +1,6 @@
 # Develop A WordPress Block
 
-A hands-on tutorial on doing React the WordPress way.
+A hands-on tutorial on creating a WordPress content block.
 
 [Rob Stinson](https://robstinson.co/) created this tutorial's block.
 
@@ -21,10 +21,6 @@ And you'll see typical setup of a WP block plugin.
 The basics of React and [modern JavaScript](https://kentcdodds.com/blog/javascript-to-know-for-react).
 
 The first 12 lessons in [The Beginner's Guide To React](https://egghead.io/courses/the-beginner-s-guide-to-react) should look familiar.
-
-## What don't you need to know?
-
-PHP. There's only 1 PHP file, and you can learn as you go.
 
 ## Requirements
 
