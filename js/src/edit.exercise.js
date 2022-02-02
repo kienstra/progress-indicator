@@ -8,7 +8,7 @@ import * as React from 'react';
  */
 // @ts-ignore The declaration file is outdated.
 // 🚧 Also import useBlockProps from '@wordpress/block-editor'
-import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { InspectorControls } from '@wordpress/block-editor';
 // 🚧 Also import a component from '@wordpress/components' to choose a color, and another component to choose a number: https://github.com/WordPress/gutenberg/tree/trunk/packages/components/src
 import { PanelBody } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';
