@@ -4,9 +4,7 @@ This React [component](https://github.com/WordPress/gutenberg/blob/57da3c91a166d
 
 Its only job is to return markup.
 
-The returned markup is saved to the database as HTML, with attributes stored in comments.
-
-Here's an example:
+The returned markup is saved to the database as HTML, with attributes stored in comments:
 
 ```html
 <!-- wp:progress-indicator/progress-indicator {"color":"#ffe2c7","currentStep":3,"numberOfSteps":7} -->
