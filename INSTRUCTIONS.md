@@ -31,11 +31,15 @@ This adds classes, and sometimes attributes from the [Block Supports](https://gi
 ```
 
 ## Exercise
-You'll see a lot of [block validation](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#validation) notices.
+You'll see a lot of [block validation](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#validation) notices like:
+
+>This block contains unexpected or invalid content.
 
 This is normal when editing the `Save` component.
 
-Click 'Attempt Block Recovery' and continue developing.
+Click 'Attempt Block Recovery' and continue developing:
+
+![unexpected-invalid-content](https://user-images.githubusercontent.com/4063887/152257716-0477a0dc-d666-4249-a5e4-65c96a1e7817.gif)
 
 Once you finish this `Save` component, this block will be done.
 
