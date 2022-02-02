@@ -2,11 +2,20 @@
 
 This React [component](https://github.com/WordPress/gutenberg/blob/57da3c91a166d917a2a9de98177be9c3dfe07ee5/docs/reference-guides/block-api/block-edit-save.md#save) determines what's saved to the database.
 
-And what's saved to the database is what displays on the front-end.
-
-Unlike the Edit component, this component isn't interactive.
-
 Its only job is to return markup.
+
+The returned markup is saved to the database as HTML, with attributes stored in comments.
+
+Here's an example:
+
+```html
+<!-- wp:progress-indicator/progress-indicator {"color":"#ffe2c7","currentStep":3,"numberOfSteps":7} -->
+<div class="wp-block-progress-indicator-progress-indicator">
+```
+
+And that saved markup is what displays on the front-end.
+
+Unlike the `Edit` component, this component isn't interactive.
 
 So you won't see `useState()` or REST API calls in `Save`.
 
