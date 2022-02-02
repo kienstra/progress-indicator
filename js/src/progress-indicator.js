@@ -32,20 +32,16 @@ export default function ProgressIndicator( { attributes } ) {
 		{ /* Step Circles */ }
 		{ [ ...Array( attributes.numberOfSteps ) ].map( ( value, index ) => {
 			const stepNumber = index + 1;
-			let style = {};
+			const style = {};
 
 			if ( attributes.currentStep === stepNumber ) {
-				style = {
-					border: `2px solid ${ attributes.color }`,
-					boxShadow: `#ffffff 0 0 0 0, ${ color.lighten( 43 ).toString() } 0 0 0 4px, #000000 0 0 0 0`,
-					color: isColorDark ? attributes.color : '#6b7280',
-				};
+				style.border = `2px solid ${ attributes.color }`;
+				style.boxShadow = `#ffffff 0 0 0 0, ${ color.lighten( 43 ).toString() } 0 0 0 4px, #000000 0 0 0 0`;
+				style.color = isColorDark ? attributes.color : '#6b7280';
 			} else if ( attributes.currentStep > stepNumber ) {
-				style = {
-					backgroundColor: attributes.color,
-					border: `2px solid ${ attributes.color }`,
-					color: isColorDark ? '#ecfdf5' : '#6b7280',
-				};
+				style.backgroundColor = attributes.color;
+				style.border = `2px solid ${ attributes.color }`;
+				style.color = isColorDark ? '#ecfdf5' : '#6b7280';
 			}
 
 			return <div key={ index } style={ style } className="pib-progress-indicator__step">
