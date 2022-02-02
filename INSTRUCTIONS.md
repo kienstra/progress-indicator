@@ -14,6 +14,39 @@ We'll render the block controls in [InspectorControls](https://github.com/WordPr
 
 By rendering components inside <InspectorControls>, they appear in the Inspector.
 
+The `Edit` component is very interactive.
+
+It updates the block attributes and markup.
+
+One of its `props` is `setAttributes`:
+
+```jsx
+export default function Edit( {
+    attributes,
+    setAttributes
+} ) {
+```
+
+That sets an attributes to a new value.
+
+For example, when the user selects a color, it can set the `color` attribute:
+
+```jsx
+onChange={ ( newValue ) =>
+	setAttributes( { color: newValue } )
+}
+```
+
+That handler accepts a `newValue` parameter, which is the value that the user just selected.
+
+And `setAttributes` accepts an object.
+
+That object only needs one property, which is the name of the attribute:
+
+```jsx
+setAttributes( { color: newValue } )
+```
+
 ## Exercise
 
 ### File
