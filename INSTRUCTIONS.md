@@ -33,7 +33,7 @@ export default function Edit( {
 } ) {
 ```
 
-That sets an attributes to a new value.
+That sets an attribute to a new value.
 
 For example, when the user selects a color, it can set the `color` attribute:
 
