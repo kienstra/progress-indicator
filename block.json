@@ -21,6 +21,11 @@
 	},
 	"category": "design",
 	"editorScript": "file:js/dist/index.js",
+	"example": {
+		"color": "#10b981",
+		"currentStype": 2,
+		"numberOfSteps": 5
+	},
 	"icon": "chart-area",
 	"keywords": [ "progress", "steps" ],
 	"style": "file:css/block.css",
