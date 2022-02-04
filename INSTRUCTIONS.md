@@ -14,13 +14,11 @@ A `block.json` file [must be present](https://github.com/WordPress/wporg-plugin-
 
 Also, WordPress [recommends](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#benefits-using-the-metadata-file) registering a block with PHP and JS.
 
-So the `block.json` file makes this more DRY, as we can use that file in both languages.
+Both registrations will be simple because of `block.json`.
 
 ## Exercise
 
 You're going to register the block in JS and PHP.
-
-You can mainly use [block.json](block.json) for both.
 
 Look for 🚧 in the exercise files for where to edit.
 
@@ -28,11 +26,8 @@ In [js/src/index.exercise.js](js/src/index.exercise.js), `registerBlockType()` w
 
 ```js
 registerBlockType( block.name, {
-	apiVersion: block.apiVersion,
-	// Most other values taken from block also.
+	edit: // Edit component here.
 ```
-
-Hint: you can avoid doing `block.` by [destructuring](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) the properties of `block`.
 
 ### Files
 - [js/src/index.exercise.js](js/src/index.exercise.js)
