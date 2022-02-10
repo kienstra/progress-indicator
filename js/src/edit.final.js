@@ -30,7 +30,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return <div { ...blockProps }>
 		<p>{ __( 'This is a placeholder for the Progress Indicator block', 'progress-indicator' ) }</p>
 		<InspectorControls>
-			<PanelBody title={ __( 'Colors', 'progress-indicator' ) }>
+			<PanelBody title={ __( 'Color', 'progress-indicator' ) }>
 				<ColorPalette
 					colors={ colors }
 					value={ attributes.color }
