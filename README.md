@@ -61,7 +61,7 @@ The username is `admin` and the password is `password`.
 For the other `wp-env` commands, see the [Command Reference](https://github.com/wordPress/gutenberg/tree/trunk/packages/env#command-reference).
 
 ## Exercises
-1. [Block JSON](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/1-block-registration/INSTRUCTIONS.md)
+1. [Block Registration](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/1-block-registration/INSTRUCTIONS.md)
 2. [Edit Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/2-edit-component/INSTRUCTIONS.md)
 3. [Progress Indicator Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/3-progress-indicator/INSTRUCTIONS.md)
 4. [Save Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/4-save-component/INSTRUCTIONS.md)
