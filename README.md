@@ -61,15 +61,15 @@ The username is `admin` and the password is `password`.
 For the other `wp-env` commands, see the [Command Reference](https://github.com/wordPress/gutenberg/tree/trunk/packages/env#command-reference).
 
 ## Exercises
-1. [Block JSON](https://github.com/kienstra/progress-indicator/blob/exercise/1-block-json/INSTRUCTIONS.md)
-2. [Edit Component](https://github.com/kienstra/progress-indicator/blob/exercise/2-edit-component/INSTRUCTIONS.md)
-3. [Progress Indicator Component](https://github.com/kienstra/progress-indicator/blob/exercise/3-progress-indicator/INSTRUCTIONS.md)
-4. [Save Component](https://github.com/kienstra/progress-indicator/blob/exercise/4-save-component/INSTRUCTIONS.md)
+1. [Block Registration](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/1-block-registration/INSTRUCTIONS.md)
+2. [Edit Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/2-edit-component/INSTRUCTIONS.md)
+3. [Progress Indicator Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/3-progress-indicator/INSTRUCTIONS.md)
+4. [Save Component](https://github.com/kienstra/wordpress-block-tutorial/blob/exercise/4-save-component/INSTRUCTIONS.md)
 
 ## Exercise Steps
 This format is [taken from](https://github.com/kentcdodds/bookshelf/tree/6b4a484eb61c3e7bb27d151ca32b041662922536#workflow) Kent C. Dodds.
 
-1. `checkout` the branch for the exercise, like [exercise/1-block-json](https://github.com/kienstra/progress-indicator/tree/exercise/1-block-json)
+1. `checkout` the branch for the exercise, like [exercise/1-block-json](https://github.com/kienstra/wordpress-block-tutorial/tree/exercise/1-block-registration)
 2. Read `INSTRUCTIONS.md`
 3. Find the `Files` heading in `INSTRUCTIONS.md`, and edit its files
 4. 🚧 will show where to edit

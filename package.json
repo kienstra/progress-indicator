@@ -1,5 +1,5 @@
 {
-  "name": "progress-indicator",
+  "name": "wordpress-block-tutorial",
   "version": "0.1.0",
   "description": "A block for adding a progress indicator",
   "author": "Rob Stinson",
@@ -7,11 +7,11 @@
   "keywords": [
     "wordpress"
   ],
-  "homepage": "https://github.com/kienstra/progress-indicator",
+  "homepage": "https://github.com/kienstra/wordpress-block-tutorial",
   "repository": {
-    "url": "https://github.com/kienstra/progress-indicator/issues"
+    "url": "https://github.com/kienstra/wordpress-block-tutorial/issues"
   },
-  "bugs": "https://github.com/kienstra/progress-indicator/issues",
+  "bugs": "https://github.com/kienstra/wordpress-block-tutorial/issues",
   "engines": {
     "node": "14"
   },
