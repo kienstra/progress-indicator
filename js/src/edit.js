@@ -35,7 +35,7 @@ export default function Edit( { attributes, setAttributes } ) {
 	return <div { ...blockProps }>
 		{ /* 🚧 Render the ProgressIndicator here, with the prop it expects. */ }
 		<InspectorControls>
-			<PanelBody title={ __( 'Colors', 'progress-indicator' ) }>
+			<PanelBody title={ __( 'Color', 'progress-indicator' ) }>
 				<ColorPalette
 					colors={ colors }
 					value={ attributes.color }
