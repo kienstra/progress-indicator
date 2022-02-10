@@ -1,4 +1,4 @@
-# Block JSON File
+# Block Registration
 
 All content in the WordPress block editor is a block.
 
