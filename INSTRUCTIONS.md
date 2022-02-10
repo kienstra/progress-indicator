@@ -55,3 +55,5 @@ setAttributes( { color: newValue } )
 
 ### File
 - [js/src/edit.exercise.js](js/src/edit.exercise.js)
+
+[Solution video](https://bit.ly/3HJCDVg)
