@@ -2,7 +2,7 @@
   "name": "kienstra/progress-indicator",
   "type": "wordpress-plugin",
   "description": "A block for adding a progress indicator",
-  "homepage": "https://github.com/kienstra/wordpress-block-tutorial",
+  "homepage": "https://github.com/kienstra/wp-block-tutorial",
   "license": "GPL-2.0",
   "require": {
     "php": "^5.6 || ^7"
