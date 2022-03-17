@@ -9,6 +9,7 @@ jobs:
       - image: cimg/php:7.4.5-node
     steps:
       - checkout
+      - node/install
       - node/install-packages
       - run: composer install
       - run: npm run lint
