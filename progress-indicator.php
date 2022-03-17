@@ -22,9 +22,9 @@ namespace ProgressIndicator;
 
 add_action( 'init', __NAMESPACE__ . '\register_block' );
 
-/**
- * Registers the block with the block.json file.
- */
-function register_block() {
-	register_block_type( __DIR__ );
-}
+// 🚧 Define a function register_block().
+// That function should simply call the PHP function to register a block: https://developer.wordpress.org/reference/functions/register_block_type/
+// And that function's only argument should be the directory of this plugin.
+// You can get that directory from a magic constant: https://www.php.net/manual/en/language.constants.magic.php
+// That's where it'll look for the block.json file.
+// Do npm run lint:php to see if there's anything else to add.
