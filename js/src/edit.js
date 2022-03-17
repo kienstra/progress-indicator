@@ -6,6 +6,12 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
+<<<<<<< HEAD
+=======
+import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import { ColorPalette, PanelBody, RangeControl } from '@wordpress/components';
+import { useSelect } from '@wordpress/data';
+>>>>>>> main
 import { __ } from '@wordpress/i18n';
 
 /**
