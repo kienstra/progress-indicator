@@ -43,7 +43,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					That will be for attributes.color.
 				Inside the 2nd <PanelBody>
 					Add 2 components to choose numbers that you imported above from '@wordpress/components'.
-					Those will be for attribute.currentStep and attributes.numberOfSteps
+					Those will be for attribute.currentStep and attributes.numberOfSteps.
 
 				The value prop of those components should be the attribute for it.
 				For example, the value of the color component should be attributes.color.
