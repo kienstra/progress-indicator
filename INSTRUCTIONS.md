@@ -10,9 +10,9 @@ WordPress also has a big component library in [@wordpress/components](https://gi
 
 Most of the time, you won't need to write a custom control.
 
-We'll render the block controls in [InspectorControls](https://github.com/WordPress/gutenberg/tree/57da3c91a166d917a2a9de98177be9c3dfe07ee5/packages/block-editor/src/components/inspector-controls).
+We'll render the block controls in [<InspectorControls>](https://github.com/WordPress/gutenberg/tree/57da3c91a166d917a2a9de98177be9c3dfe07ee5/packages/block-editor/src/components/inspector-controls).
 
-By rendering components inside <InspectorControls>, they appear in the Inspector.
+By rendering components inside `<InspectorControls>`, they appear in the Inspector.
 
 ## Exercise
 
