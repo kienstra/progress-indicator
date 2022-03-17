@@ -18,7 +18,7 @@ import save from './save';
  * }} Attributes
  */
 
-// @ts-ignore The declaration file is probably wrong.
+// @ts-ignore The declaration file is wrong.
 registerBlockType( block.name, {
 	edit,
 	save,

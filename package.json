@@ -22,8 +22,8 @@
     "@wordpress/components": "^19.6.1",
     "@wordpress/data": "^6.4.1",
     "@wordpress/i18n": "^4.4.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {

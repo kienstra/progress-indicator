@@ -6,7 +6,6 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
-// @ts-ignore The declaration file is outdated.
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
