@@ -23,7 +23,6 @@ import ProgressIndicator from './progress-indicator';
  *  attributes: import('./index').Attributes,
  *  setAttributes: Function
  * }} props
- * @return {React.ReactElement} The component.
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();
