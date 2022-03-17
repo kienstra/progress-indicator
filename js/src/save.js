@@ -6,7 +6,6 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
-// @ts-ignore The declaration file is outdated.
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
@@ -17,7 +16,7 @@ import ProgressIndicator from './progress-indicator';
 /**
  * The component to save the markup.
  *
- * @param {{attributes: import('./index').Attributes}} props
+ * @param {{attributes: import('./').Attributes}} props
  * @return {React.ReactElement} The component.
  */
 export default function Save( { attributes } ) {

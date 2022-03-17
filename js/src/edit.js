@@ -6,7 +6,6 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
-// @ts-ignore The declaration file is outdated.
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
 import { ColorPalette, PanelBody, RangeControl } from '@wordpress/components';
 import { useSelect } from '@wordpress/data';

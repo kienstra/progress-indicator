@@ -1,4 +1,3 @@
-// Enables in-line/in-editor linting
 {
   "root": true,
   "extends": [
