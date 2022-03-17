@@ -15,7 +15,7 @@
   "engines": {
     "node": "14"
   },
-  "main": "webpack.config.js",
+  "main": "js/dist/index.js",
   "dependencies": {
     "@wordpress/block-editor": "^8.3.1",
     "@wordpress/blocks": "^11.3.1",
