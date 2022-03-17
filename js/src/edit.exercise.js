@@ -39,9 +39,11 @@ export default function Edit( { attributes, setAttributes } ) {
 				🚧 Add 2 <PanelBody> components here, and give each of them a title prop that's translated with __().
 
 				Inside the 1st <PanelBody>
-					Add the component to choose colors that you imported above from '@wordpress/components'. That will be for attributes.color.
+					Add the component to choose colors that you imported above from '@wordpress/components'.
+					That will be for attributes.color.
 				Inside the 2nd <PanelBody>
-					Add 2 components to choose numbers that you imported above from '@wordpress/components'. Those will be for attribute.currentStep and attributes.numberOfSteps
+					Add 2 components to choose numbers that you imported above from '@wordpress/components'.
+					Those will be for attribute.currentStep and attributes.numberOfSteps
 
 				The value prop of those components should be the attribute for it.
 				For example, the value of the color component should be attributes.color.
