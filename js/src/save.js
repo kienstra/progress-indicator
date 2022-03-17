@@ -6,23 +6,11 @@ import * as React from 'react';
 /**
  * WordPress dependencies
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 
-/**
- * Internal dependencies
- */
-import ProgressIndicator from './progress-indicator';
-
-/**
- * The component to save the markup.
- *
- * @param {{attributes: import('./').Attributes}} props
- * @return {React.ReactElement} The component.
- */
-export default function Save( { attributes } ) {
-	const blockProps = useBlockProps.save();
-
-	return <div { ...blockProps }>
-		<ProgressIndicator attributes={ attributes } />
-	</div>;
+/** The component to save the markup. */
+export default function Save() {
+	return <span>
+		{ __( 'This is a placeholder for the Progress Indicator block', 'progress-indicator' ) }
+	</span>;
 }
