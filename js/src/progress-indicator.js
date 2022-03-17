@@ -7,7 +7,7 @@ import tinycolor2 from 'tinycolor2';
 /**
  * The progress indicator component.
  *
- * @param {{attributes: import('./index').Attributes}} props
+ * @param {{attributes: import('./').Attributes}} props
  * @return {React.ReactElement} The component.
  */
 export default function ProgressIndicator( { attributes } ) {
