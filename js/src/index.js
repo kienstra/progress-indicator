@@ -12,9 +12,9 @@ import save from './save';
 
 /**
  * @typedef {{
- *  color: string,
- *  currentStep: number,
- *  numberOfSteps: number
+ *  color: typeof block.attributes.color.default,
+ *  currentStep: typeof block.attributes.currentStep.default,
+ *  numberOfSteps: typeof block.attributes.numberOfSteps.default
  * }} Attributes
  */
 
