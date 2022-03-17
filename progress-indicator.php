@@ -18,11 +18,13 @@
  * Domain Path:       languages
  */
 
-add_action( 'init', 'progress_indicator_register_block' );
+namespace ProgressIndicator;
+
+add_action( 'init', __NAMESPACE__ . '\register_block' );
 
 /**
  * Registers the block with the block.json file.
  */
-function progress_indicator_register_block() {
+function register_block() {
 	register_block_type( __DIR__ );
 }
