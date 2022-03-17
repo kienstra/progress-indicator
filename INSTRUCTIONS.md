@@ -26,7 +26,7 @@ In [js/src/index.exercise.js](js/src/index.exercise.js), `registerBlockType()` w
 
 ```js
 registerBlockType( block.name, {
-	edit: // Edit component here.
+	// edit component here.
 ```
 
 ### Files
