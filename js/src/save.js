@@ -8,11 +8,7 @@ import * as React from 'react';
  */
 import { __ } from '@wordpress/i18n';
 
-/**
- * The component to save the markup.
- *
- * @return {React.ReactElement} The component.
- */
+/** The component to save the markup. */
 export default function Save() {
 	return <span>
 		{ __( 'This is a placeholder for the Progress Indicator block', 'progress-indicator' ) }

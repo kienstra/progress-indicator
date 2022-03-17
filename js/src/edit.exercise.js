@@ -3,7 +3,7 @@
  */
 import * as React from 'react';
 
-/**
+ /**
  * WordPress dependencies
  */
 // @ts-ignore The declaration file is outdated.
@@ -18,15 +18,14 @@ import { __ } from '@wordpress/i18n';
  * The component for the editor.
  *
  * @param {{
- *  attributes: import('./index').Attributes,
+ *  attributes: import('./').Attributes,
  *  setAttributes: Function
  * }} props
- * @return {React.ReactElement} The component.
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = // 🚧  Call useBlockProps.
 	const { colors } = useSelect(
-		// 🚧 Add an anonymous function here as an argument to useSelect().
+		// 🚧 Add an anonymous function here as an argument of useSelect().
 		// The function should accept select as a parameter.
 		// Then, it should get the data store with:
 		// select( 'core/block-editor' )

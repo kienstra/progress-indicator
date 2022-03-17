@@ -19,7 +19,6 @@ import { __ } from '@wordpress/i18n';
  *  attributes: import('./index').Attributes,
  *  setAttributes: Function
  * }} props
- * @return {React.ReactElement} The component.
  */
 export default function Edit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps();

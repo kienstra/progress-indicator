@@ -1,5 +1,5 @@
 {
-  "name": "wordpress-block-tutorial",
+  "name": "wp-block-tutorial",
   "version": "0.1.0",
   "description": "A block for adding a progress indicator",
   "author": "Rob Stinson",
@@ -7,38 +7,38 @@
   "keywords": [
     "wordpress"
   ],
-  "homepage": "https://github.com/kienstra/wordpress-block-tutorial",
+  "homepage": "https://github.com/kienstra/wp-block-tutorial",
   "repository": {
-    "url": "https://github.com/kienstra/wordpress-block-tutorial/issues"
+    "url": "https://github.com/kienstra/wp-block-tutorial/issues"
   },
-  "bugs": "https://github.com/kienstra/wordpress-block-tutorial/issues",
+  "bugs": "https://github.com/kienstra/wp-block-tutorial/issues",
   "engines": {
     "node": "14"
   },
-  "main": "webpack.config.js",
+  "main": "js/dist/index.js",
   "dependencies": {
-    "@wordpress/block-editor": "^8.0.13",
-    "@wordpress/blocks": "^11.1.5",
-    "@wordpress/components": "^19.2.0",
-    "@wordpress/data": "^6.1.5",
-    "@wordpress/i18n": "^4.2.4",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "@wordpress/block-editor": "^8.3.1",
+    "@wordpress/blocks": "^11.3.1",
+    "@wordpress/components": "^19.6.1",
+    "@wordpress/data": "^6.4.1",
+    "@wordpress/i18n": "^4.4.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "tinycolor2": "^1.4.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@types/wordpress__block-editor": "^6.0.4",
-    "@types/wordpress__components": "^14.0.9",
-    "@wordpress/env": "^4.2.0",
-    "@wordpress/scripts": "^19.2.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@types/wordpress__block-editor": "^6.0.5",
+    "@types/wordpress__components": "^19.3.0",
+    "@wordpress/env": "^4.3.1",
+    "@wordpress/scripts": "^22.2.1",
     "acorn": "^8.7.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx": "^0.1.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.3.2",
-    "typescript": "^4.5.4"
+    "prettier": "^2.6.0",
+    "typescript": "^4.6.2"
   },
   "scripts": {
     "check-licenses": "wp-scripts check-licenses --prod --gpl2",
