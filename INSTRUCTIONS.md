@@ -30,7 +30,7 @@ registerBlockType( block.name, {
 ```
 
 ### Files
-- [js/src/index.exercise.js](js/src/index.exercise.js)
 - [progress-indicator.php](progress-indicator.php)
+- [js/src/index.exercise.js](js/src/index.exercise.js)
 
 [Solution video](https://bit.ly/3HG80jv)
