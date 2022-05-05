@@ -18,7 +18,7 @@
   "main": "js/dist/index.js",
   "dependencies": {
     "@wordpress/block-editor": "^8.3.1",
-    "@wordpress/blocks": "^11.3.1",
+    "@wordpress/blocks": "^11.7.0",
     "@wordpress/components": "^19.6.1",
     "@wordpress/data": "^6.4.1",
     "@wordpress/i18n": "^4.4.1",
